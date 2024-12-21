@@ -1,0 +1,38 @@
+header {
+  .barre-sup {
+    padding: 20px 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-bottom: 1px solid $border;
+
+    .menu-barre-sup {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 30px;
+    }
+
+    div {
+      &:last-of-type {
+        display: flex;
+        justify-content: end;
+      }
+    }
+  }
+  .barre-nav {
+    nav {
+      ul {
+        li {
+          a {
+            font-family: $font2;
+            font-size: 1.6rem;
+
+            i {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

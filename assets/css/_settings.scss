@@ -1,0 +1,66 @@
+//fonts
+
+@font-face {
+  font-family: "fira-sans-condensed-semi-bold";
+  src: url(../fonts/Fira_Sans_Condensed/FiraSansCondensed-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "fira-sans-condensed-regular";
+  src: url(../fonts/Fira_Sans_Condensed/FiraSansCondensed-Regular.ttf);
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+$font1: "fira-sans-condensed-semi-bold", "Trebuchet MS", "Lucida Sans Unicode",
+  "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+$font2: "fira-sans-condensed-regular", "Trebuchet MS", "Lucida Sans Unicode",
+  "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+$font3: "poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+
+//colors
+
+$color1: #ea4240;
+$border: #f1f1f1;
+$black: #000;
+$white: #fff;
+$blackShadow: rgba(0, 0, 0, 0.25);
+$whiteShadow: rgba(255, 255, 255, 0.25);
+
+//general
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font3;
+  color: $black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font1;
+  font-weight: normal;
+}
+p,
+a,
+i {
+  font-size: 1rem;
+  text-decoration: none;
+  color: $black;
+}
+
+a {
+  transition: 0.2s;
+  &:hover {
+    color: $color1;
+  }
+}

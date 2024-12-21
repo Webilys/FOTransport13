@@ -1,0 +1,28 @@
+button {
+  border: none;
+  background: none;
+  a {
+    color: $color1;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: start;
+    align-items: center;
+    border: 3px solid $color1;
+    border-radius: 360px;
+    padding: 0 10px 0 0;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      background: $color1;
+      color: $white;
+    }
+
+    i {
+      padding: 10px;
+      background: $color1;
+      color: $white;
+      border-radius: 360px;
+      border: 3px solid $color1;
+    }
+  }
+}

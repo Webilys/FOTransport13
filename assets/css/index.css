@@ -1,1 +1,112 @@
-/*# sourceMappingURL=index.css.map */
+@font-face {
+  font-family: "fira-sans-condensed-semi-bold";
+  src: url(../fonts/Fira_Sans_Condensed/FiraSansCondensed-SemiBold.ttf);
+}
+@font-face {
+  font-family: "fira-sans-condensed-regular";
+  src: url(../fonts/Fira_Sans_Condensed/FiraSansCondensed-Regular.ttf);
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "fira-sans-condensed-semi-bold", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: normal;
+}
+
+p,
+a,
+i {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #000;
+}
+
+a {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+a:hover {
+  color: #ea4240;
+}
+
+button {
+  border: none;
+  background: none;
+}
+button a {
+  color: #ea4240;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid #ea4240;
+  border-radius: 360px;
+  padding: 0 10px 0 0;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+button a:hover {
+  background: #ea4240;
+  color: #fff;
+}
+button a i {
+  padding: 10px;
+  background: #ea4240;
+  color: #fff;
+  border-radius: 360px;
+  border: 3px solid #ea4240;
+}
+
+header .barre-sup {
+  padding: 20px 50px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-bottom: 1px solid #f1f1f1;
+}
+header .barre-sup .menu-barre-sup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+header .barre-sup div:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+header .barre-nav nav ul li a {
+  font-family: "fira-sans-condensed-regular", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 1.6rem;
+}
+header .barre-nav nav ul li a i {
+  font-size: 1.4rem;
+}/*# sourceMappingURL=index.css.map */

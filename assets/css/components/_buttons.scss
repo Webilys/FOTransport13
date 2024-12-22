@@ -3,6 +3,23 @@ button {
   background: none;
   a {
     color: $color1;
+    border: 3px solid $color1;
+    border-radius: 360px;
+    padding: 5px 20px;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      background: $color1;
+      color: $white;
+    }
+  }
+}
+
+.buttonIcon {
+  border: none;
+  background: none;
+  a {
+    color: $color1;
     display: grid;
     grid-template-columns: 20% 80%;
     justify-content: start;
@@ -11,6 +28,7 @@ button {
     border-radius: 360px;
     padding: 0 10px 0 0;
     transition: 0.2s ease-in-out;
+    background: $whiteShadow;
 
     &:hover {
       background: $color1;
@@ -23,6 +41,54 @@ button {
       color: $white;
       border-radius: 360px;
       border: 3px solid $color1;
+    }
+  }
+}
+
+.buttonIconRight {
+  border: none;
+  background: none;
+  a {
+    background: $whiteShadow;
+
+    color: $color1;
+    display: grid;
+    grid-template-columns: 73% 27%;
+    justify-content: start;
+    align-items: center;
+    border: 3px solid $color1;
+    border-radius: 360px;
+    padding: 0 0 0 10px;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      background: $color1;
+      color: $white;
+    }
+
+    i {
+      font-size: 1.3rem;
+      padding: 10px;
+      margin-left: 5px;
+      background: $color1;
+      color: $white;
+      border-radius: 360px;
+      border: 3px solid $color1;
+    }
+  }
+}
+
+#accueil {
+  .buttonIconRight {
+    width: 200px;
+
+    a {
+      background: $whiteShadow;
+
+      &:hover {
+        background: $color1;
+        color: $white;
+      }
     }
   }
 }

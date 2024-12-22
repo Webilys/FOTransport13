@@ -2,36 +2,63 @@ header {
   .barre-sup {
     padding: 20px 50px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 70% 30%;
     border-bottom: 1px solid $border;
+    box-shadow: 0 0 5px $blackShadow;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $white;
+    z-index: 99999999999999999999999999999999999999999;
 
     .menu-barre-sup {
       display: flex;
       justify-content: start;
       align-items: center;
       gap: 30px;
+
+      img {
+        width: 20%;
+      }
+
+      .menuIcons {
+        display: none;
+      }
+
+      nav {
+        ul {
+          display: flex;
+          justify-content: space-evenly;
+          li {
+            list-style: none;
+            transition: 0.2s;
+            padding: 0 10px;
+            cursor: pointer;
+
+            a {
+              display: flex;
+              width: 100%;
+              height: 100%;
+
+              i {
+                transition: 0.2s;
+                transform: translateY(10%);
+
+                &:hover {
+                  color: $color1;
+                }
+              }
+            }
+          }
+        }
+      }
     }
 
     div {
       &:last-of-type {
         display: flex;
         justify-content: end;
-      }
-    }
-  }
-  .barre-nav {
-    nav {
-      ul {
-        li {
-          a {
-            font-family: $font2;
-            font-size: 1.6rem;
-
-            i {
-              font-size: 1.4rem;
-            }
-          }
-        }
       }
     }
   }

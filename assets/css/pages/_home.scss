@@ -1,0 +1,29 @@
+.hero {
+  padding: 50px;
+  .hero-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+
+    .lettre-secretaire {
+      border: 3px solid $color1;
+      padding: 30px;
+
+      h2 {
+        text-align: center;
+        padding-bottom: 30px;
+      }
+
+      .signature {
+        font-size: 0.9rem;
+        text-align: right;
+      }
+
+      ul {
+        li {
+          text-align: justify;
+          list-style-position: inside;
+        }
+      }
+    }
+  }
+}

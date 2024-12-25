@@ -68,10 +68,12 @@ button a {
   padding: 5px 20px;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  text-shadow: 0 0 5px #fff;
 }
 button a:hover {
   background: #ea4240;
   color: #fff;
+  text-shadow: 0 0 5px #ea4240;
 }
 
 .buttonIcon {
@@ -94,10 +96,12 @@ button a:hover {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   background: rgba(255, 255, 255, 0.25);
+  text-shadow: 0 0 5px #fff;
 }
 .buttonIcon a:hover {
   background: #ea4240;
   color: #fff;
+  text-shadow: 0 0 5px #ea4240;
 }
 .buttonIcon a i {
   padding: 10px;
@@ -105,6 +109,7 @@ button a:hover {
   color: #fff;
   border-radius: 360px;
   border: 3px solid #ea4240;
+  text-shadow: 0 0 5px #ea4240;
 }
 
 .buttonIconRight {
@@ -127,6 +132,7 @@ button a:hover {
   padding: 0 0 0 10px;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  text-shadow: 0 0 5px #fff;
 }
 .buttonIconRight a:hover {
   background: #ea4240;
@@ -140,6 +146,7 @@ button a:hover {
   color: #fff;
   border-radius: 360px;
   border: 3px solid #ea4240;
+  text-shadow: 0 0 5px #ea4240;
 }
 
 #accueil .buttonIconRight {
@@ -209,6 +216,19 @@ header .barre-sup .menu-barre-sup img {
 }
 header .barre-sup .menu-barre-sup .menuIcons {
   display: none;
+}
+@media screen and (max-width: 1270px) {
+  header .barre-sup .menu-barre-sup .menuIcons {
+    display: block;
+  }
+}
+header .barre-sup .menu-barre-sup .menuIcons #closeIcon {
+  display: none;
+}
+@media screen and (max-width: 1270px) {
+  header .barre-sup .menu-barre-sup nav {
+    display: none;
+  }
 }
 header .barre-sup .menu-barre-sup nav ul {
   display: -webkit-box;
@@ -376,19 +396,44 @@ footer .footer-copyright .heart {
 }
 
 .hero {
+  background: url(../img/union.webp) center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero .heroOverlay {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 100px 50px;
+}
+.hero .heroOverlay h2 {
+  padding-bottom: 40px;
+  color: #000;
+  text-shadow: 0 0 10px #fff;
+}
+.hero .heroOverlay button a {
+  text-shadow: 0 0 5px #fff;
+}
+
+.lettre {
   padding: 50px;
 }
-.hero .hero-container {
+.lettre .lettre-container {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   gap: 20px;
 }
-.hero .hero-container .items-container {
+.lettre .lettre-container .items-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
-.hero .hero-container .items-container .item {
+.lettre .lettre-container .items-container .item {
   border: 1px solid #ea4240;
   height: 100%;
   width: 100%;
@@ -407,22 +452,22 @@ footer .footer-copyright .heart {
           align-items: center;
   padding: 20px;
 }
-.hero .hero-container .items-container .item i {
+.lettre .lettre-container .items-container .item i {
   padding-bottom: 30px;
 }
-.hero .hero-container .lettre-secretaire {
+.lettre .lettre-container .lettre-secretaire {
   border: 3px solid #ea4240;
   padding: 30px;
 }
-.hero .hero-container .lettre-secretaire h2 {
+.lettre .lettre-container .lettre-secretaire h2 {
   text-align: center;
   padding-bottom: 30px;
 }
-.hero .hero-container .lettre-secretaire .signature {
+.lettre .lettre-container .lettre-secretaire .signature {
   font-size: 0.9rem;
   text-align: right;
 }
-.hero .hero-container .lettre-secretaire ul li {
+.lettre .lettre-container .lettre-secretaire ul li {
   text-align: justify;
   list-style-position: inside;
 }/*# sourceMappingURL=index.css.map */

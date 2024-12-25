@@ -1,6 +1,30 @@
 .hero {
+  background: url(../img/union.webp) center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .heroOverlay {
+    background: $whiteShadow;
+    padding: 100px 50px;
+
+    h2 {
+      padding-bottom: 40px;
+      color: $black;
+      text-shadow: 0 0 10px $white;
+    }
+
+    button {
+      a {
+        text-shadow: 0 0 5px $white;
+      }
+    }
+  }
+}
+
+.lettre {
   padding: 50px;
-  .hero-container {
+  .lettre-container {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     gap: 20px;

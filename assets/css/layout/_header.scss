@@ -24,9 +24,21 @@ header {
 
       .menuIcons {
         display: none;
+
+        @media screen and (max-width: 1270px) {
+          display: block;
+        }
+
+        #closeIcon {
+          display: none;
+        }
       }
 
       nav {
+        @media screen and (max-width: 1270px) {
+          display: none;
+        }
+
         ul {
           display: flex;
           justify-content: space-evenly;

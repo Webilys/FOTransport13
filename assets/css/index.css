@@ -111,6 +111,21 @@ button a:hover {
   color: #fff;
 }
 
+button[type=submit] {
+  text-transform: uppercase;
+  color: #8b0000;
+  border: 3px solid #8b0000;
+  border-radius: 360px;
+  padding: 5px 20px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  font-size: 1rem;
+}
+button[type=submit]:hover {
+  background: linear-gradient(135deg, #b80000, #8b0000);
+  color: #fff;
+}
+
 .buttonIcon {
   border: none;
   background: none;
@@ -1052,7 +1067,7 @@ footer .footer-copyright .heart {
 #nous-contacter #infos-contact {
   display: grid;
   grid-template-columns: 30% 70%;
-  padding: 0 50px 50px;
+  padding: 0 50px 70px;
   gap: 20px;
 }
 #nous-contacter #infos-contact h2 {
@@ -1109,6 +1124,9 @@ footer .footer-copyright .heart {
 #nous-contacter #infos-contact .item-contact .flex-div .icones-contact a:first-of-type {
   padding-bottom: 20px;
 }
+#nous-contacter #infos-contact .item-contact .flex-div .icones-contact a i {
+  color: #8b0000;
+}
 #nous-contacter #infos-contact .left-bar {
   display: grid;
   grid-template-columns: 1fr;
@@ -1128,13 +1146,32 @@ footer .footer-copyright .heart {
   display: block;
   width: 100%;
   margin: 10px 0;
-  padding: 10px 10px 10px 0;
+  padding: 10px;
   border-top: none;
   border-right: none;
   border-left: none;
+  border-bottom: 1px solid #f1f1f1;
   font-size: 1rem;
   font-weight: normal;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#nous-contacter #infos-contact .right-bar form input:active, #nous-contacter #infos-contact .right-bar form input:focus, #nous-contacter #infos-contact .right-bar form input:hover {
+  outline: none;
+  border-bottom: 1px solid #8b0000;
 }
 #nous-contacter #infos-contact .right-bar form textarea {
   display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #f1f1f1;
+  font-size: 1rem;
+  font-weight: normal;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#nous-contacter #infos-contact .right-bar form textarea:active, #nous-contacter #infos-contact .right-bar form textarea:focus, #nous-contacter #infos-contact .right-bar form textarea:hover {
+  outline: none;
+  border: 1px solid #8b0000;
 }/*# sourceMappingURL=index.css.map */

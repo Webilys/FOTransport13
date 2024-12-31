@@ -28,7 +28,7 @@
   #infos-contact {
     display: grid;
     grid-template-columns: 30% 70%;
-    padding: 0 50px 50px;
+    padding: 0 50px 70px;
     gap: 20px;
 
     h2 {
@@ -67,6 +67,10 @@
             &:first-of-type {
               padding-bottom: 20px;
             }
+
+            i {
+              color: $color1;
+            }
           }
         }
       }
@@ -87,15 +91,38 @@
           display: block;
           width: 100%;
           margin: 10px 0;
-          padding: 10px 10px 10px 0;
+          padding: 10px;
           border-top: none;
           border-right: none;
           border-left: none;
+          border-bottom: 1px solid $border;
           font-size: 1rem;
           font-weight: normal;
+          transition: 0.2s;
+
+          &:active,
+          &:focus,
+          &:hover {
+            outline: none;
+            border-bottom: 1px solid $color1;
+          }
         }
         textarea {
           display: block;
+          width: 100%;
+          margin: 10px 0;
+          padding: 10px;
+          border: 1px solid $border;
+          font-size: 1rem;
+          font-weight: normal;
+          transition: 0.2s;
+
+          &:active,
+          &:focus,
+          &:hover {
+            outline: none;
+            border: 1px solid $color1;
+          }
         }
       }
     }

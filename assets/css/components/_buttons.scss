@@ -17,6 +17,20 @@ button {
   }
 }
 
+button[type="submit"] {
+  text-transform: uppercase;
+  color: $color1;
+  border: 3px solid $color1;
+  border-radius: 360px;
+  padding: 5px 20px;
+  transition: 0.2s ease-in-out;
+  font-size: 1rem;
+  &:hover {
+    background: $degrade;
+    color: $white;
+  }
+}
+
 .buttonIcon {
   border: none;
   background: none;

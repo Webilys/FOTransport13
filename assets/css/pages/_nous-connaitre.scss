@@ -1,22 +1,56 @@
 #nous-connaitre {
-  .items-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+  section {
+    padding: 50px;
+    h2 {
+      color: $color1;
+      margin-bottom: 30px;
+      text-align: left;
+      text-transform: uppercase;
 
-    .item {
-      border: 1px solid $color1;
-      height: 100%;
-      width: 100%;
+      &:after {
+        margin-top: 20px;
+        display: block;
+        content: "   ";
+        height: 1px;
+        width: 50px;
+        border-top: 3px solid $color1;
+      }
+    }
+  }
+
+  #qui-sommes-nous {
+    padding: 0;
+    margin: 0 50px 50px;
+    background: url(../img/cta.webp) center/cover;
+    border-radius: 10px;
+    box-shadow: 0 0 5px $blackShadow;
+
+    div {
+      margin: 0;
+      padding: 50px;
+      background: $degrade2;
+      border-radius: 10px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 20px;
 
-      i {
-        padding-bottom: 30px;
+      h2 {
+        color: $white;
+        text-align: center;
+
+        &:after {
+          margin: 20px auto 0;
+          border-top: 3px solid $white;
+        }
+      }
+
+      p {
+        color: $white;
       }
     }
+  }
+
+  #nos-revendications {
   }
 }

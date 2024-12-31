@@ -55,6 +55,7 @@ $degrade2: linear-gradient(135deg, rgba(184, 0, 0, 0.7), rgba(139, 0, 0, 0.7));
 
 body {
   text-align: center;
+  position: relative;
 }
 
 h1,
@@ -83,4 +84,32 @@ a {
 
 strong {
   font-family: $font4;
+}
+
+a {
+  .bouton-appel {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: $degrade;
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 360px;
+    box-shadow: 0 0 5px $blackShadow;
+    transition: 0.2s;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 10px $blackShadow;
+    }
+
+    i {
+      font-size: 1.5rem;
+      color: $white;
+    }
+  }
 }

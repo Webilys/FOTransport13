@@ -26,6 +26,7 @@
 
 body {
   text-align: center;
+  position: relative;
 }
 
 h1,
@@ -56,6 +57,40 @@ a:hover {
 
 strong {
   font-family: "poppins-bold", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+a .bouton-appel {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #b80000, #8b0000);
+  padding: 10px;
+  width: 70px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 360px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+a .bouton-appel:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+a .bouton-appel i {
+  font-size: 1.5rem;
+  color: #fff;
 }
 
 button {
@@ -209,6 +244,19 @@ button a:hover {
           transform: scale(1.1);
 }
 
+#title-page {
+  background: linear-gradient(135deg, #b80000, #8b0000);
+}
+#title-page .title-container {
+  padding: 10px;
+}
+#title-page .title-container h1 {
+  font-size: 2.2rem;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+}
+
 .cta {
   background: url(../img/cta.webp) center/cover;
 }
@@ -287,12 +335,15 @@ header .barre-sup .menu-barre-sup nav ul {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .barre-sup .menu-barre-sup nav ul li {
   list-style: none;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  padding: 0 10px 10px;
+  padding: 0 10px;
   cursor: pointer;
   position: relative;
 }
@@ -309,12 +360,15 @@ header .barre-sup .menu-barre-sup nav ul li a {
 header .barre-sup .menu-barre-sup nav ul li a i {
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  -webkit-transform: translate(25%, 25%);
-          transform: translate(25%, 25%);
-  font-size: 0.9rem;
+  font-size: 1.5rem;
 }
 header .barre-sup .menu-barre-sup nav ul li a i:hover {
   color: #8b0000;
+}
+header .barre-sup .menu-barre-sup nav ul li a .fa-chevron-down {
+  -webkit-transform: translate(25%, 20%);
+          transform: translate(25%, 20%);
+  font-size: 0.9rem;
 }
 header .barre-sup .menu-barre-sup nav ul li #sousNav1,
 header .barre-sup .menu-barre-sup nav ul li #sousNav2,
@@ -322,7 +376,6 @@ header .barre-sup .menu-barre-sup nav ul li #sousNav3 {
   display: none;
   position: absolute;
   z-index: 1000000000000000000000000000000000000000000;
-  margin-top: 5px;
 }
 header .barre-sup .menu-barre-sup nav ul li #sousNav1 ul,
 header .barre-sup .menu-barre-sup nav ul li #sousNav2 ul,
@@ -378,6 +431,11 @@ header .barre-sup .menu-barre-sup nav ul li #sousNav3 ul li a {
   text-align: left;
   font-size: 0.9rem;
   color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 header .barre-sup .menu-barre-sup nav ul li #sousNav1 ul {
   width: 250px;
@@ -422,13 +480,14 @@ header .barre-sup div:last-of-type button i {
 main {
   margin-top: 92px;
 }
-
-footer {
-  font-size: 0.9rem;
+main .intro {
+  margin: 50px;
+  padding: 50px;
 }
+
 footer p,
 footer a {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 footer .footer-sup {
   background: #8b0000;
@@ -471,55 +530,7 @@ footer .footer-copyright {
 }
 footer .footer-copyright .heart {
   color: #8b0000;
-}
-
-#accueil {
-  text-align: center;
-  background: url(../img/union.webp) center/cover;
-}
-#accueil header {
-  height: 60vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-#accueil header img {
-  width: 450px;
-  -webkit-filter: drop-shadow(0 0 10px #fff);
-          filter: drop-shadow(0 0 10px #fff);
-}
-#accueil main {
-  height: 30vh;
-  margin-top: 0;
-}
-#accueil main h1 {
-  padding-bottom: 40px;
-  color: #000;
-  text-shadow: 0 0 10px #fff;
-}
-#accueil footer {
-  height: 10vh;
-  background: #8b0000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-#accueil footer p,
-#accueil footer a {
-  color: #fff;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 .hero {
@@ -667,7 +678,7 @@ footer .footer-copyright .heart {
 }
 .lettre .texte-lettre p {
   color: #fff;
-  text-align: left;
+  text-align: justify;
   font-size: 0.9rem;
 }
 .lettre .texte-lettre p .signature {
@@ -677,5 +688,61 @@ footer .footer-copyright .heart {
 .lettre .texte-lettre p .signature .small {
   font-weight: normal;
   font-size: 0.8rem;
+  color: #fff;
+}
+
+#nous-connaitre section {
+  padding: 50px;
+}
+#nous-connaitre section h2 {
+  color: #8b0000;
+  margin-bottom: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+#nous-connaitre section h2:after {
+  margin-top: 20px;
+  display: block;
+  content: "   ";
+  height: 1px;
+  width: 50px;
+  border-top: 3px solid #8b0000;
+}
+#nous-connaitre #qui-sommes-nous {
+  padding: 0;
+  margin: 0 50px 50px;
+  background: url(../img/cta.webp) center/cover;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+#nous-connaitre #qui-sommes-nous div {
+  margin: 0;
+  padding: 50px;
+  background: linear-gradient(135deg, rgba(184, 0, 0, 0.7), rgba(139, 0, 0, 0.7));
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#nous-connaitre #qui-sommes-nous div h2 {
+  color: #fff;
+  text-align: center;
+}
+#nous-connaitre #qui-sommes-nous div h2:after {
+  margin: 20px auto 0;
+  border-top: 3px solid #fff;
+}
+#nous-connaitre #qui-sommes-nous div p {
   color: #fff;
 }/*# sourceMappingURL=index.css.map */

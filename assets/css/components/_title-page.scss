@@ -1,0 +1,14 @@
+#title-page {
+  background: $degrade;
+
+  .title-container {
+    padding: 10px;
+
+    h1 {
+      font-size: 2.2rem;
+      color: $white;
+      text-shadow: 0 0 5px $blackShadow;
+      text-transform: uppercase;
+    }
+  }
+}

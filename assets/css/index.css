@@ -51,7 +51,7 @@ a {
   transition: 0.2s;
 }
 a:hover {
-  color: #ea4240;
+  color: #8b0000;
 }
 
 strong {
@@ -64,15 +64,15 @@ button {
 }
 button a {
   text-transform: uppercase;
-  color: #ea4240;
-  border: 3px solid #ea4240;
+  color: #8b0000;
+  border: 3px solid #8b0000;
   border-radius: 360px;
   padding: 5px 20px;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 button a:hover {
-  background: #ea4240;
+  background: linear-gradient(135deg, #b80000, #8b0000);
   color: #fff;
 }
 
@@ -81,7 +81,7 @@ button a:hover {
   background: none;
 }
 .buttonIcon a {
-  color: #ea4240;
+  color: #8b0000;
   display: grid;
   grid-template-columns: 20% 80%;
   -webkit-box-pack: start;
@@ -90,7 +90,7 @@ button a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 3px solid #ea4240;
+  border: 3px solid #8b0000;
   border-radius: 360px;
   padding: 0 10px 0 0;
   -webkit-transition: 0.2s ease-in-out;
@@ -99,17 +99,16 @@ button a:hover {
   text-shadow: 0 0 5px #fff;
 }
 .buttonIcon a:hover {
-  background: #ea4240;
+  background: linear-gradient(135deg, #b80000, #8b0000);
   color: #fff;
-  text-shadow: 0 0 5px #ea4240;
+  text-shadow: 0 0 5px #8b0000;
 }
 .buttonIcon a i {
-  padding: 10px;
-  background: #ea4240;
+  padding: 12px 10px;
+  background: linear-gradient(135deg, #b80000, #8b0000);
   color: #fff;
   border-radius: 360px;
-  border: 3px solid #ea4240;
-  text-shadow: 0 0 5px #ea4240;
+  text-shadow: 0 0 5px #8b0000;
 }
 
 .buttonIconRight {
@@ -118,7 +117,7 @@ button a:hover {
 }
 .buttonIconRight a {
   background: transparent;
-  color: #ea4240;
+  color: #8b0000;
   display: grid;
   grid-template-columns: 73% 27%;
   -webkit-box-pack: start;
@@ -127,7 +126,7 @@ button a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 3px solid #ea4240;
+  border: 3px solid #8b0000;
   border-radius: 360px;
   padding: 0 0 0 10px;
   -webkit-transition: 0.2s ease-in-out;
@@ -135,19 +134,19 @@ button a:hover {
   text-shadow: 0 0 5px #fff;
 }
 .buttonIconRight a:hover {
-  background: #ea4240;
+  background: linear-gradient(135deg, #b80000, #8b0000);
   color: #fff;
-  text-shadow: 0 0 5px #ea4240;
+  text-shadow: 0 0 5px #8b0000;
 }
 .buttonIconRight a i {
   font-size: 1.3rem;
   padding: 10px;
   margin-left: 5px;
-  background: #ea4240;
+  background: linear-gradient(135deg, #b80000, #8b0000);
   color: #fff;
   border-radius: 360px;
-  border: 3px solid #ea4240;
-  text-shadow: 0 0 5px #ea4240;
+  border: 3px solid #8b0000;
+  text-shadow: 0 0 5px #8b0000;
 }
 
 #accueil .buttonIconRight {
@@ -157,20 +156,24 @@ button a:hover {
   background: rgba(255, 255, 255, 0.25);
 }
 #accueil .buttonIconRight a:hover {
-  background: #ea4240;
+  background: linear-gradient(135deg, #b80000, #8b0000);
   color: #fff;
-  text-shadow: 0 0 5px #ea4240;
+  text-shadow: 0 0 5px #8b0000;
 }
 
 .buttonScrollDown {
   border: none;
   background: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .buttonScrollDown a {
   width: 100%;
   height: 100%;
   background: none;
   border: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .buttonScrollDown a:hover {
   background: none;
@@ -188,10 +191,10 @@ button a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #ea4240;
+  background: linear-gradient(135deg, #b80000, #8b0000);
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-  border: 3px solid #ea4240;
+  border: none;
   border-radius: 360px;
   width: 70px;
   height: 70px;
@@ -202,15 +205,12 @@ button a:hover {
   transition: 0.2s;
 }
 .buttonScrollDown a i:hover {
-  background: #000;
-  color: #fff;
-  border: 3px solid #000;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .cta {
-  background: url(../img/union.webp) center/cover;
+  background: url(../img/cta.webp) center/cover;
 }
 .cta .overlay {
   padding: 50px;
@@ -224,14 +224,15 @@ button a:hover {
 }
 .cta .overlay p {
   padding-bottom: 40px;
+  text-shadow: 0 0 5px #fff;
 }
 .cta .overlay button a {
-  background: #ea4240;
+  background: #8b0000;
   color: #fff;
 }
 .cta .overlay button a:hover {
   background: rgba(255, 255, 255, 0.25);
-  color: #ea4240;
+  color: #8b0000;
 }
 
 header .barre-sup {
@@ -296,7 +297,7 @@ header .barre-sup .menu-barre-sup nav ul li {
   position: relative;
 }
 header .barre-sup .menu-barre-sup nav ul li:hover i {
-  color: #ea4240;
+  color: #8b0000;
 }
 header .barre-sup .menu-barre-sup nav ul li a {
   display: -webkit-box;
@@ -313,7 +314,7 @@ header .barre-sup .menu-barre-sup nav ul li a i {
   font-size: 0.9rem;
 }
 header .barre-sup .menu-barre-sup nav ul li a i:hover {
-  color: #ea4240;
+  color: #8b0000;
 }
 header .barre-sup .menu-barre-sup nav ul li #sousNav1,
 header .barre-sup .menu-barre-sup nav ul li #sousNav2,
@@ -364,7 +365,7 @@ header .barre-sup .menu-barre-sup nav ul li #sousNav3 ul li:last-of-type {
 header .barre-sup .menu-barre-sup nav ul li #sousNav1 ul li:hover,
 header .barre-sup .menu-barre-sup nav ul li #sousNav2 ul li:hover,
 header .barre-sup .menu-barre-sup nav ul li #sousNav3 ul li:hover {
-  background: #ea4240;
+  background: linear-gradient(135deg, #b80000, #8b0000);
 }
 header .barre-sup .menu-barre-sup nav ul li #sousNav1 ul li:hover a,
 header .barre-sup .menu-barre-sup nav ul li #sousNav2 ul li:hover a,
@@ -430,7 +431,7 @@ footer a {
   font-size: 0.9rem;
 }
 footer .footer-sup {
-  background: #ea4240;
+  background: #8b0000;
   padding: 20px 0;
 }
 footer .footer-sup ul {
@@ -469,7 +470,7 @@ footer .footer-copyright {
   padding: 20px 0;
 }
 footer .footer-copyright .heart {
-  color: #ea4240;
+  color: #8b0000;
 }
 
 #accueil {
@@ -504,7 +505,7 @@ footer .footer-copyright .heart {
 }
 #accueil footer {
   height: 10vh;
-  background: #ea4240;
+  background: #8b0000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -522,7 +523,7 @@ footer .footer-copyright .heart {
 }
 
 .hero {
-  background: url(../img/union.webp) center/cover;
+  background: url(../img/hero.webp) center/cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -560,12 +561,24 @@ footer .footer-copyright .heart {
 }
 
 #categories {
-  padding: 50px;
+  height: 100vh;
+  padding: 120px 50px 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-#categories .item {
+#categories a {
+  border-radius: 10px;
+  background: linear-gradient(135deg, #b80000, #8b0000);
+  height: 250px;
+}
+#categories a .item {
   height: 250px;
   width: 100%;
   display: -webkit-box;
@@ -581,14 +594,9 @@ footer .footer-copyright .heart {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px;
-  background: url(../img/union-carre.webp) center/cover;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
-#categories .item h2 {
-  background: rgba(255, 255, 255, 0.8);
+#categories a .item h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -598,7 +606,76 @@ footer .footer-copyright .heart {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   height: 100%;
   border-radius: 10px;
+  background: linear-gradient(135deg, rgba(184, 0, 0, 0.7), rgba(139, 0, 0, 0.7));
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+#categories a .item h2:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #b80000, #8b0000);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.lettre {
+  padding: 20px 50px 50px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.lettre .img-lettre {
+  width: 100%;
+}
+.lettre .img-lettre img {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.lettre .texte-lettre {
+  background: linear-gradient(135deg, #b80000, #8b0000);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 50px;
+  margin: 50px 0 0 -150px;
+}
+.lettre .texte-lettre h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.lettre .texte-lettre h2:after {
+  margin-top: 20px;
+  display: block;
+  content: "   ";
+  height: 1px;
+  width: 50px;
+  border-top: 3px solid #fff;
+}
+.lettre .texte-lettre p {
+  color: #fff;
+  text-align: left;
+  font-size: 0.9rem;
+}
+.lettre .texte-lettre p .signature {
+  font-weight: bold;
+  color: #fff;
+}
+.lettre .texte-lettre p .signature .small {
+  font-weight: normal;
+  font-size: 0.8rem;
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */

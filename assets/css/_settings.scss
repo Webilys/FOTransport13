@@ -31,7 +31,7 @@ $font4: "poppins-bold", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 
 //colors
 
-$color1: #ea4240;
+$color1: #8b0000;
 $border: #f1f1f1;
 $black: #000;
 $white: #fff;
@@ -39,6 +39,8 @@ $blackShadow: rgba(0, 0, 0, 0.25);
 $whiteShadow: rgba(255, 255, 255, 0.25);
 $whiteOverlay: rgba(255, 255, 255, 0.2);
 $whiteBg: rgba(255, 255, 255, 0.8);
+$degrade: linear-gradient(135deg, #b80000, #8b0000);
+$degrade2: linear-gradient(135deg, rgba(184, 0, 0, 0.7), rgba(139, 0, 0, 0.7));
 
 //general
 

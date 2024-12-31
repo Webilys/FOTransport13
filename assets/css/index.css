@@ -245,12 +245,25 @@ button a:hover {
 }
 
 #title-page {
-  background: linear-gradient(135deg, #b80000, #8b0000);
+  background: url(../img/logo-fo-transport-13.png) repeat;
+  background-size: 90px;
+  margin: 0;
+  padding: 0;
 }
 #title-page .title-container {
-  padding: 10px;
+  background: linear-gradient(135deg, rgba(184, 0, 0, 0.7), rgba(139, 0, 0, 0.7));
 }
 #title-page .title-container h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
   font-size: 2.2rem;
   color: #fff;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
@@ -691,16 +704,16 @@ footer .footer-copyright .heart {
   color: #fff;
 }
 
-#nous-connaitre section {
+#nous-connaitre .section {
   padding: 50px;
 }
-#nous-connaitre section h2 {
+#nous-connaitre .section h2 {
   color: #8b0000;
   margin-bottom: 30px;
   text-align: left;
   text-transform: uppercase;
 }
-#nous-connaitre section h2:after {
+#nous-connaitre .section h2:after {
   margin-top: 20px;
   display: block;
   content: "   ";
@@ -1015,29 +1028,4 @@ footer .footer-copyright .heart {
 #nous-connaitre #notre-reseau div h2:after {
   margin: 20px auto 0;
   border-top: 3px solid #8b0000;
-}
-#nous-connaitre .cta {
-  padding: 0;
-}
-#nous-connaitre .cta .overlay {
-  padding: 50px;
-  background: rgba(255, 255, 255, 0.2);
-}
-#nous-connaitre .cta .overlay h2 {
-  color: #000;
-  text-shadow: 0 0 5px #fff;
-  font-size: 2rem;
-  padding-bottom: 0px;
-  text-align: center;
-}
-#nous-connaitre .cta .overlay p {
-  text-shadow: 0 0 5px #fff;
-}
-#nous-connaitre .cta .overlay button a {
-  background: #8b0000;
-  color: #fff;
-}
-#nous-connaitre .cta .overlay button a:hover {
-  background: rgba(255, 255, 255, 0.25);
-  color: #8b0000;
 }/*# sourceMappingURL=index.css.map */

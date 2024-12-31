@@ -6,13 +6,16 @@
     background: $whiteOverlay;
 
     h2 {
-      color: $white;
-      text-shadow: 0 0 5px $black;
+      // color: $white;
+      // text-shadow: 0 0 5px $black;
+      color: $black;
+      text-shadow: 0 0 5px $white;
       font-size: 2rem;
       padding-bottom: 30px;
     }
 
     p {
+      // font-weight: bold;
       padding-bottom: 40px;
       text-shadow: 0 0 5px $white;
     }

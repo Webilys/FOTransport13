@@ -217,8 +217,8 @@ button a:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 .cta .overlay h2 {
-  color: #fff;
-  text-shadow: 0 0 5px #000;
+  color: #000;
+  text-shadow: 0 0 5px #fff;
   font-size: 2rem;
   padding-bottom: 30px;
 }
@@ -631,7 +631,7 @@ footer .footer-copyright .heart {
 }
 
 .lettre {
-  padding: 20px 50px 50px;
+  padding: 20px 50px 100px;
   display: grid;
   grid-template-columns: 50% 50%;
 }

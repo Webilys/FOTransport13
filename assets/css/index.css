@@ -756,8 +756,7 @@ footer .footer-copyright .heart {
   margin: 20px auto 0;
 }
 #nous-connaitre #nos-services-aux-adherents .services-container {
-  margin-top: 20px;
-  padding: 20px;
+  margin: 40px auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -870,8 +869,7 @@ footer .footer-copyright .heart {
   margin: 20px auto 0;
 }
 #nous-connaitre #nos-valeurs .valeurs-container {
-  margin-top: 20px;
-  padding: 20px;
+  margin: 40px auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;

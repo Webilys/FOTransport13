@@ -245,15 +245,9 @@ button a:hover {
 }
 
 #title-page {
-  background: url(../img/logo-fo-transport-13.png) repeat;
-  background-size: 90px;
-  margin: 0;
-  padding: 0;
+  background: linear-gradient(135deg, #b80000, #8b0000);
 }
 #title-page .title-container {
-  background: linear-gradient(135deg, rgba(184, 0, 0, 0.7), rgba(139, 0, 0, 0.7));
-}
-#title-page .title-container h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,6 +258,8 @@ button a:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 50px;
+}
+#title-page .title-container h1 {
   font-size: 2.2rem;
   color: #fff;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
@@ -1028,4 +1024,117 @@ footer .footer-copyright .heart {
 #nous-connaitre #notre-reseau div h2:after {
   margin: 20px auto 0;
   border-top: 3px solid #8b0000;
+}
+
+#nous-contacter .section {
+  padding: 50px;
+}
+#nous-contacter .section h2 {
+  color: #8b0000;
+  margin-bottom: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+#nous-contacter .section h2:after {
+  margin-top: 20px;
+  display: block;
+  content: "   ";
+  height: 1px;
+  width: 50px;
+  border-top: 3px solid #8b0000;
+}
+#nous-contacter #map {
+  padding: 0;
+}
+#nous-contacter #map iframe {
+  width: 100%;
+}
+#nous-contacter #infos-contact {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 0 50px 50px;
+  gap: 20px;
+}
+#nous-contacter #infos-contact h2 {
+  color: #8b0000;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#nous-contacter #infos-contact h2:after {
+  margin: 20px auto 0px;
+  display: block;
+  content: "   ";
+  height: 1px;
+  width: 50px;
+  border-top: 3px solid #8b0000;
+}
+#nous-contacter #infos-contact .item-contact {
+  border: 3px solid #8b0000;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#nous-contacter #infos-contact .item-contact .flex-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#nous-contacter #infos-contact .item-contact .flex-div .icones-contact a {
+  display: block;
+}
+#nous-contacter #infos-contact .item-contact .flex-div .icones-contact a:first-of-type {
+  padding-bottom: 20px;
+}
+#nous-contacter #infos-contact .left-bar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1Fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+#nous-contacter #infos-contact .right-bar form {
+  width: 100%;
+}
+#nous-contacter #infos-contact .right-bar form input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 10px 10px 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  font-size: 1rem;
+  font-weight: normal;
+}
+#nous-contacter #infos-contact .right-bar form textarea {
+  display: block;
 }/*# sourceMappingURL=index.css.map */

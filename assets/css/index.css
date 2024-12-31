@@ -21,6 +21,7 @@
           box-sizing: border-box;
   font-family: "poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: #000;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -62,18 +63,17 @@ button {
   background: none;
 }
 button a {
+  text-transform: uppercase;
   color: #ea4240;
   border: 3px solid #ea4240;
   border-radius: 360px;
   padding: 5px 20px;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  text-shadow: 0 0 5px #fff;
 }
 button a:hover {
   background: #ea4240;
   color: #fff;
-  text-shadow: 0 0 5px #ea4240;
 }
 
 .buttonIcon {
@@ -95,7 +95,7 @@ button a:hover {
   padding: 0 10px 0 0;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  background: rgba(255, 255, 255, 0.25);
+  background: #fff;
   text-shadow: 0 0 5px #fff;
 }
 .buttonIcon a:hover {
@@ -117,7 +117,7 @@ button a:hover {
   background: none;
 }
 .buttonIconRight a {
-  background: rgba(255, 255, 255, 0.25);
+  background: transparent;
   color: #ea4240;
   display: grid;
   grid-template-columns: 73% 27%;
@@ -137,6 +137,7 @@ button a:hover {
 .buttonIconRight a:hover {
   background: #ea4240;
   color: #fff;
+  text-shadow: 0 0 5px #ea4240;
 }
 .buttonIconRight a i {
   font-size: 1.3rem;
@@ -158,6 +159,54 @@ button a:hover {
 #accueil .buttonIconRight a:hover {
   background: #ea4240;
   color: #fff;
+  text-shadow: 0 0 5px #ea4240;
+}
+
+.buttonScrollDown {
+  border: none;
+  background: none;
+}
+.buttonScrollDown a {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+}
+.buttonScrollDown a:hover {
+  background: none;
+  border: none;
+}
+.buttonScrollDown a i {
+  position: absolute;
+  bottom: -35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ea4240;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border: 3px solid #ea4240;
+  border-radius: 360px;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  text-shadow: none;
+  font-size: 1.5rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.buttonScrollDown a i:hover {
+  background: #000;
+  color: #fff;
+  border: 3px solid #000;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .cta {
@@ -242,8 +291,12 @@ header .barre-sup .menu-barre-sup nav ul li {
   list-style: none;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  padding: 0 10px;
+  padding: 0 10px 10px;
   cursor: pointer;
+  position: relative;
+}
+header .barre-sup .menu-barre-sup nav ul li:hover i {
+  color: #ea4240;
 }
 header .barre-sup .menu-barre-sup nav ul li a {
   display: -webkit-box;
@@ -255,11 +308,84 @@ header .barre-sup .menu-barre-sup nav ul li a {
 header .barre-sup .menu-barre-sup nav ul li a i {
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  -webkit-transform: translateY(10%);
-          transform: translateY(10%);
+  -webkit-transform: translate(25%, 25%);
+          transform: translate(25%, 25%);
+  font-size: 0.9rem;
 }
 header .barre-sup .menu-barre-sup nav ul li a i:hover {
   color: #ea4240;
+}
+header .barre-sup .menu-barre-sup nav ul li #sousNav1,
+header .barre-sup .menu-barre-sup nav ul li #sousNav2,
+header .barre-sup .menu-barre-sup nav ul li #sousNav3 {
+  display: none;
+  position: absolute;
+  z-index: 1000000000000000000000000000000000000000000;
+  margin-top: 5px;
+}
+header .barre-sup .menu-barre-sup nav ul li #sousNav1 ul,
+header .barre-sup .menu-barre-sup nav ul li #sousNav2 ul,
+header .barre-sup .menu-barre-sup nav ul li #sousNav3 ul {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header .barre-sup .menu-barre-sup nav ul li #sousNav1 ul li,
+header .barre-sup .menu-barre-sup nav ul li #sousNav2 ul li,
+header .barre-sup .menu-barre-sup nav ul li #sousNav3 ul li {
+  border-bottom: 1px solid #f1f1f1;
+  width: 100%;
+  padding: 10px 20px;
+}
+header .barre-sup .menu-barre-sup nav ul li #sousNav1 ul li:first-of-type,
+header .barre-sup .menu-barre-sup nav ul li #sousNav2 ul li:first-of-type,
+header .barre-sup .menu-barre-sup nav ul li #sousNav3 ul li:first-of-type {
+  border-radius: 10px 10px 0 0;
+}
+header .barre-sup .menu-barre-sup nav ul li #sousNav1 ul li:last-of-type,
+header .barre-sup .menu-barre-sup nav ul li #sousNav2 ul li:last-of-type,
+header .barre-sup .menu-barre-sup nav ul li #sousNav3 ul li:last-of-type {
+  border-radius: 0 0 10px 10px;
+}
+header .barre-sup .menu-barre-sup nav ul li #sousNav1 ul li:hover,
+header .barre-sup .menu-barre-sup nav ul li #sousNav2 ul li:hover,
+header .barre-sup .menu-barre-sup nav ul li #sousNav3 ul li:hover {
+  background: #ea4240;
+}
+header .barre-sup .menu-barre-sup nav ul li #sousNav1 ul li:hover a,
+header .barre-sup .menu-barre-sup nav ul li #sousNav2 ul li:hover a,
+header .barre-sup .menu-barre-sup nav ul li #sousNav3 ul li:hover a {
+  color: #fff;
+}
+header .barre-sup .menu-barre-sup nav ul li #sousNav1 ul li a,
+header .barre-sup .menu-barre-sup nav ul li #sousNav2 ul li a,
+header .barre-sup .menu-barre-sup nav ul li #sousNav3 ul li a {
+  text-align: left;
+  font-size: 0.9rem;
+  color: #000;
+}
+header .barre-sup .menu-barre-sup nav ul li #sousNav1 ul {
+  width: 250px;
+}
+header .barre-sup .menu-barre-sup nav ul li #sousNav2 ul {
+  width: 300px;
+}
+header .barre-sup .menu-barre-sup nav ul li #sousNav3 ul {
+  width: 150px;
 }
 header .barre-sup div:last-of-type {
   display: -webkit-box;
@@ -293,7 +419,7 @@ header .barre-sup div:last-of-type button i {
 }
 
 main {
-  margin-top: 112px;
+  margin-top: 92px;
 }
 
 footer {
@@ -406,36 +532,41 @@ footer .footer-copyright .heart {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 85vh;
 }
 .hero .heroOverlay {
-  background: rgba(255, 255, 255, 0.25);
-  padding: 100px 50px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 50px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 .hero .heroOverlay h2 {
-  padding-bottom: 40px;
+  font-size: 2rem;
   color: #000;
-  text-shadow: 0 0 10px #fff;
-}
-.hero .heroOverlay button a {
   text-shadow: 0 0 5px #fff;
+  text-transform: uppercase;
+  line-height: 50px;
 }
 
-.lettre {
+#categories {
   padding: 50px;
-}
-.lettre .lettre-container {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
-.lettre .lettre-container .items-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-.lettre .lettre-container .items-container .item {
-  border: 1px solid #ea4240;
-  height: 100%;
+#categories .item {
+  height: 250px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -451,23 +582,23 @@ footer .footer-copyright .heart {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px;
+  background: url(../img/union-carre.webp) center/cover;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
 }
-.lettre .lettre-container .items-container .item i {
-  padding-bottom: 30px;
-}
-.lettre .lettre-container .lettre-secretaire {
-  border: 3px solid #ea4240;
-  padding: 30px;
-}
-.lettre .lettre-container .lettre-secretaire h2 {
-  text-align: center;
-  padding-bottom: 30px;
-}
-.lettre .lettre-container .lettre-secretaire .signature {
-  font-size: 0.9rem;
-  text-align: right;
-}
-.lettre .lettre-container .lettre-secretaire ul li {
-  text-align: justify;
-  list-style-position: inside;
+#categories .item h2 {
+  background: rgba(255, 255, 255, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }/*# sourceMappingURL=index.css.map */

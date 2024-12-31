@@ -3,73 +3,58 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 85vh;
 
   .heroOverlay {
-    background: $whiteShadow;
-    padding: 100px 50px;
+    background: $whiteBg;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 0 5px $blackShadow;
+
+    // width: 100%;
+    // height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 
     h2 {
-      padding-bottom: 40px;
+      font-size: 2rem;
       color: $black;
-      text-shadow: 0 0 10px $white;
-    }
-
-    button {
-      a {
-        text-shadow: 0 0 5px $white;
-      }
+      text-shadow: 0 0 5px $white;
+      text-transform: uppercase;
+      line-height: 50px;
     }
   }
 }
 
-.lettre {
+#categories {
   padding: 50px;
-  .lettre-container {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 
-    .items-container {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
+  .item {
+    // border: 3px solid $color1;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: url(../img/union-carre.webp) center/cover;
+    box-shadow: 0 0 5px $blackShadow;
+    border-radius: 10px;
 
-      .item {
-        border: 1px solid $color1;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-
-        i {
-          padding-bottom: 30px;
-        }
-      }
-    }
-
-    .lettre-secretaire {
-      border: 3px solid $color1;
-      padding: 30px;
-
-      h2 {
-        text-align: center;
-        padding-bottom: 30px;
-      }
-
-      .signature {
-        font-size: 0.9rem;
-        text-align: right;
-      }
-
-      ul {
-        li {
-          text-align: justify;
-          list-style-position: inside;
-        }
-      }
+    h2 {
+      background: $whiteBg;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
     }
   }
 }

@@ -36,9 +36,64 @@
                   ><i class="fa-solid fa-house-chimney"></i
                 ></a>
               </li>
-              <li><a href="./nous-connaitre.html">Nous connaître</a></li>
-              <li><a href="./vos-droits.html">Vos droits</a></li>
-              <li><a href="./outils.html">Outils</a></li>
+              <li onmouseover="openSousNav1()" onmouseleave="closeSousNav1()">
+                <a href="./nous-connaitre.html"
+                  >Nous connaître <i class="fa-solid fa-chevron-down"></i
+                ></a>
+                <div
+                  id="sousNav1"
+                  onmouseover="openSousNav1()"
+                  onmouseleave="closeSousNav1()"
+                >
+                  <ul>
+                    <li><a href="#">Qui sommes-nous ?</a></li>
+                    <li><a href="#">Nos services aux adhérents</a></li>
+                    <li><a href="#">Nos revendications</a></li>
+                    <li><a href="#">Nos valeurs</a></li>
+                    <li><a href="#">Notre fonctionnement</a></li>
+                    <li><a href="#">Notre réseau</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li onmouseover="openSousNav2()" onmouseleave="closeSousNav2()">
+                <a href="./vos-droits.html"
+                  >Vos droits <i class="fa-solid fa-chevron-down"></i
+                ></a>
+                <div
+                  id="sousNav2"
+                  onmouseover="openSousNav2()"
+                  onmouseleave="closeSousNav2()"
+                >
+                  <ul>
+                    <li><a href="#">Les avantages de mon adhésion</a></li>
+                    <li><a href="#">Je suis élu(e) au CSE</a></li>
+                    <li><a href="#">Je suis mandaté(e) par mon syndicat</a></li>
+                    <li>
+                      <a href="#"
+                        >Je suis mandaté(e) par mon Union Départementale</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li onmouseover="openSousNav3()" onmouseleave="closeSousNav3()">
+                <a href="./outils.html"
+                  >Outils <i class="fa-solid fa-chevron-down"></i
+                ></a>
+                <div
+                  id="sousNav3"
+                  onmouseover="openSousNav3()"
+                  onmouseleave="closeSousNav3()"
+                >
+                  <ul>
+                    <li><a href="#">Tous les outils</a></li>
+                    <li><a href="#">Les tracts</a></li>
+                    <li><a href="#">Les affiches</a></li>
+                    <li><a href="#">Les essentiels</a></li>
+                    <li><a href="#">FAQ</a></li>
+                  </ul>
+                </div>
+              </li>
               <li><a href="./medias.html">Médias</a></li>
               <li><a href="./nous-contacter.html">Nous contacter</a></li>
             </ul>
@@ -52,8 +107,7 @@
           </button>
           <button class="buttonIcon">
             <a
-              href="          https://syndicat-departemental-force-ouvriere-transports--6618ac08c732b.assoconnect.com/contacts/login
-              "
+              href="https://syndicat-departemental-force-ouvriere-transports--6618ac08c732b.assoconnect.com/contacts/login"
               ><i class="fa-solid fa-user"></i>Se connecter</a
             >
           </button>
@@ -63,122 +117,32 @@
     <main>
       <section class="hero">
         <div class="heroOverlay">
-          <h2>
-            Bienvenue sur le site du syndicat départemental des transports et de
-            la logistique
-          </h2>
-          <button class="buttonIconRight">
-            <a href="./home.html"
-              >Entrer sur le site <i class="fa-solid fa-circle-arrow-right"></i
-            ></a>
-          </button>
+          <div>
+            <h2>
+              Bienvenue sur le site du <br />syndicat départemental des
+              transports et de la logistique
+            </h2>
+            <button class="buttonScrollDown">
+              <a href="#categories"><i class="fa-solid fa-arrow-down"></i></a>
+            </button>
+          </div>
         </div>
       </section>
-      <section class="lettre">
-        <div class="lettre-container">
-          <div class="items-container">
-            <a href="./je-souhaite-adherer.html">
-              <div class="item">
-                <i class="fa-solid fa-user-plus"></i>
-                <h2>Je souhaite adhérer</h2>
-              </div>
-            </a>
-            <a href="./vos-droits.html">
-              <div class="item">
-                <i class="fa-solid fa-user-plus"></i>
-                <h2>Les avantages de mon adhésion</h2>
-              </div>
-            </a>
-            <a href="#">
-              <div class="item">
-                <i class="fa-solid fa-user-plus"></i>
-                <h2>Mes documents importants</h2>
-              </div>
-            </a>
-            <a href="./je-souhaite-adherer.html">
-              <div class="item">
-                <i class="fa-solid fa-user-plus"></i>
-                <h2>Mes informations syndicales</h2>
-              </div>
-            </a>
+      <section id="categories">
+        <a href="./nous-connaitre.html">
+          <div class="item">
+            <h2>Nous connaître</h2>
           </div>
-          <div class="lettre-secretaire">
-            <h2>LA LETTRE DU SECRETAIRE GENERAL</h2>
-            <p>
-              <!-- la lettre mélange vouvoiement et tutoiement -->
-
-              C’est avec plaisir que je t’accueille sur notre site internet.
-              <br /><br />
-
-              Être Adhérent au Syndicat Départemental FORCE OUVRIERE des
-              Transports et de la Logistique des Bouches du Rhône c’est dans le
-              respect de la laïcité :
-              <br /><br />
-            </p>
-            <ul>
-              <li>
-                De relever le niveau moral et économique des travailleurs.
-              </li>
-              <li>
-                De conclure des conventions collectives ainsi que des accords
-                portant sur les conditions de travail, de rémunération, de
-                protection et de garanties sociales et économiques de ses
-                membres et, d’une façon générale, des salariés occupés dans la
-                profession de son ressort.
-              </li>
-              <li>
-                De resserrer les liens de solidarité et d’unir en un seul bloc
-                tous les travailleurs pour développer entre eux l’idée de la
-                démocratie économique tant sur le plan de l’entreprise, sur le
-                plan régional et national, et lutter contre toutes formes
-                d’exploitation capitaliste privée ou d’Etat.
-              </li>
-            </ul>
-            <p>
-              <br /><br />
-              Vous pourrez trouver sur ce site des informations générales, des
-              informations plus personnelles et vous pourrez à tout moment nous
-              contacter via la zone de dialogue.
-              <br /><br />
-              J’espère vous rencontrer très prochainement.
-              <br /><br />
-              Salutations Syndicales
-              <br /><br />
-              <span class="signature">
-                <strong> Laurent CASANOVA </strong>
-                <br />
-                Secrétaire Général - Diplômé en droit social de Sciences
-                Politiques
-              </span>
-            </p>
-          </div>
-          <div class="items-container">
-            <a href="./je-souhaite-adherer.html">
-              <div class="item">
-                <i class="fa-solid fa-user-plus"></i>
-                <h2>Je suis élu(e) au CSE</h2>
-              </div>
-            </a>
-            <a href="./je-souhaite-adherer.html">
-              <div class="item">
-                <i class="fa-solid fa-user-plus"></i>
-                <h2>Je suis mandaté par mon syndicat</h2>
-              </div>
-            </a>
-            <a href="./je-souhaite-adherer.html">
-              <div class="item">
-                <i class="fa-solid fa-user-plus"></i>
-                <h2>Je suis mandaté par mon Union Départementale</h2>
-              </div>
-            </a>
-            <a href="./nous-contacter.html">
-              <div class="item">
-                <i class="fa-solid fa-user-plus"></i>
-                <h2>J'ai une question</h2>
-              </div>
-            </a>
-          </div>
-        </div>
+        </a>
+        <a href="./vos-droits.html">
+          <div class="item"><h2>Vos droits</h2></div>
+        </a>
+        <a href="./outils.html">
+          <div class="item"><h2>Outils</h2></div>
+        </a>
+        <a href="./medias.html">
+          <div class="item"><h2>Médias</h2></div>
+        </a>
       </section>
       <section class="cta">
         <div class="overlay">

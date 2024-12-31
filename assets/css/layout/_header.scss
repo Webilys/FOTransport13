@@ -42,11 +42,19 @@ header {
         ul {
           display: flex;
           justify-content: space-evenly;
+
           li {
             list-style: none;
             transition: 0.2s;
-            padding: 0 10px;
+            padding: 0 10px 10px;
             cursor: pointer;
+            position: relative;
+
+            &:hover {
+              i {
+                color: $color1;
+              }
+            }
 
             a {
               display: flex;
@@ -55,11 +63,78 @@ header {
 
               i {
                 transition: 0.2s;
-                transform: translateY(10%);
+                transform: translate(25%, 25%);
+                font-size: 0.9rem;
 
                 &:hover {
                   color: $color1;
                 }
+              }
+            }
+
+            #sousNav1,
+            #sousNav2,
+            #sousNav3 {
+              display: none;
+              position: absolute;
+              z-index: 999999999999999999999999999999999999999999;
+              margin-top: 5px;
+
+              ul {
+                box-shadow: 0 0 5px $blackShadow;
+                border-radius: 10px;
+                background: $white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                // gap: 10px;
+                // width: 250px;
+
+                li {
+                  border-bottom: 1px solid $border;
+                  width: 100%;
+                  padding: 10px 20px;
+
+                  &:first-of-type {
+                    border-radius: 10px 10px 0 0;
+                  }
+
+                  &:last-of-type {
+                    border-radius: 0 0 10px 10px;
+                  }
+
+                  &:hover {
+                    background: $color1;
+
+                    a {
+                      color: $white;
+                    }
+                  }
+                  a {
+                    text-align: left;
+                    font-size: 0.9rem;
+                    color: $black;
+                  }
+                }
+              }
+            }
+
+            #sousNav1 {
+              ul {
+                width: 250px;
+              }
+            }
+
+            #sousNav2 {
+              ul {
+                width: 300px;
+              }
+            }
+
+            #sousNav3 {
+              ul {
+                width: 150px;
               }
             }
           }

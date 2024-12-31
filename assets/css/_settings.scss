@@ -38,6 +38,7 @@ $white: #fff;
 $blackShadow: rgba(0, 0, 0, 0.25);
 $whiteShadow: rgba(255, 255, 255, 0.25);
 $whiteOverlay: rgba(255, 255, 255, 0.2);
+$whiteBg: rgba(255, 255, 255, 0.8);
 
 //general
 
@@ -47,6 +48,7 @@ $whiteOverlay: rgba(255, 255, 255, 0.2);
   box-sizing: border-box;
   font-family: $font3;
   color: $black;
+  scroll-behavior: smooth;
 }
 
 body {

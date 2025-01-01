@@ -1404,10 +1404,14 @@ footer .footer-copyright .heart {
   border: 1px solid #8b0000;
 }
 
+#je-souhaite-adherer .intro {
+  padding: 0;
+}
 #je-souhaite-adherer .section {
-  padding: 50px;
+  padding: 20px 50px;
 }
 #je-souhaite-adherer .section .selection-container {
+  padding-bottom: 50px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   -webkit-box-pack: center;

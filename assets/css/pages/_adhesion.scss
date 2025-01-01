@@ -1,8 +1,13 @@
 #je-souhaite-adherer {
+  .intro {
+    padding: 0;
+  }
+
   .section {
-    padding: 50px;
+    padding: 20px 50px;
 
     .selection-container {
+      padding-bottom: 50px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       justify-content: center;

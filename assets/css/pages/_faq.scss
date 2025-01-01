@@ -1,0 +1,48 @@
+#faq {
+  .questions-answers {
+    margin: 50px;
+    padding: 50px;
+    background: $border;
+    border-radius: 10px;
+
+    .question-item {
+      border-bottom: 1px solid $color1;
+
+      .question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+
+        h2 {
+          font-weight: normal;
+          font-family: $font3;
+          text-align: left;
+          font-size: 1rem;
+          color: $black;
+          padding: 20px;
+        }
+      }
+
+      .answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        p {
+          margin: 0 20px 20px;
+          padding: 0 20px;
+          text-align: justify;
+          font-size: 0.9rem;
+
+          a {
+            font-size: 0.9rem;
+          }
+        }
+      }
+
+      .fa-chevron-down {
+        transition: transform 0.3s ease;
+      }
+    }
+  }
+}

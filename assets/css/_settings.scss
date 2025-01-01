@@ -52,6 +52,7 @@ $degrade2: linear-gradient(135deg, rgba(184, 0, 0, 0.7), rgba(139, 0, 0, 0.7));
   color: $black;
   scroll-behavior: smooth;
   cursor: default;
+  user-select: none;
 }
 
 body {

@@ -23,6 +23,10 @@
   color: #000;
   scroll-behavior: smooth;
   cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 body {
@@ -1084,6 +1088,186 @@ footer .footer-copyright .heart {
   border-top: 3px solid #8b0000;
 }
 
+#outils .section {
+  padding: 50px;
+}
+#outils .section h2 {
+  color: #8b0000;
+  margin-bottom: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+#outils .section h2:after {
+  margin-top: 20px;
+  display: block;
+  content: "   ";
+  height: 1px;
+  width: 50px;
+  border-top: 3px solid #8b0000;
+}
+#outils #menu-outils {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  gap: 20px;
+}
+#outils #menu-outils .left-bar-outils ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+#outils #menu-outils .left-bar-outils ul li {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  list-style: none;
+  border: 1px solid #f1f1f1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+#outils #menu-outils .left-bar-outils ul li:first-of-type {
+  border-radius: 10px 10px 0 0;
+}
+#outils #menu-outils .left-bar-outils ul li:last-of-type {
+  border-radius: 0 0 10px 10px;
+}
+#outils #menu-outils .left-bar-outils ul li:hover {
+  background: linear-gradient(135deg, #b80000, #8b0000);
+  color: #fff;
+}
+#outils #menu-outils .outils-container #tous-les-outils,
+#outils #menu-outils .outils-container #outils-syndicaux,
+#outils #menu-outils .outils-container #fiches-infos,
+#outils #menu-outils .outils-container #affiches,
+#outils #menu-outils .outils-container #dossiers,
+#outils #menu-outils .outils-container #tracts,
+#outils #menu-outils .outils-container #les-essentiels {
+  display: none;
+  -webkit-animation: fadeIn 1s linear;
+          animation: fadeIn 1s linear;
+}
+#outils #menu-outils .outils-container #tous-les-outils .container-docs,
+#outils #menu-outils .outils-container #outils-syndicaux .container-docs,
+#outils #menu-outils .outils-container #fiches-infos .container-docs,
+#outils #menu-outils .outils-container #affiches .container-docs,
+#outils #menu-outils .outils-container #dossiers .container-docs,
+#outils #menu-outils .outils-container #tracts .container-docs,
+#outils #menu-outils .outils-container #les-essentiels .container-docs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+#outils #menu-outils .outils-container #tous-les-outils .container-docs a,
+#outils #menu-outils .outils-container #outils-syndicaux .container-docs a,
+#outils #menu-outils .outils-container #fiches-infos .container-docs a,
+#outils #menu-outils .outils-container #affiches .container-docs a,
+#outils #menu-outils .outils-container #dossiers .container-docs a,
+#outils #menu-outils .outils-container #tracts .container-docs a,
+#outils #menu-outils .outils-container #les-essentiels .container-docs a {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+#outils #menu-outils .outils-container #tous-les-outils .container-docs a:hover,
+#outils #menu-outils .outils-container #outils-syndicaux .container-docs a:hover,
+#outils #menu-outils .outils-container #fiches-infos .container-docs a:hover,
+#outils #menu-outils .outils-container #affiches .container-docs a:hover,
+#outils #menu-outils .outils-container #dossiers .container-docs a:hover,
+#outils #menu-outils .outils-container #tracts .container-docs a:hover,
+#outils #menu-outils .outils-container #les-essentiels .container-docs a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+#outils #menu-outils .outils-container #tous-les-outils .container-docs a:hover img,
+#outils #menu-outils .outils-container #outils-syndicaux .container-docs a:hover img,
+#outils #menu-outils .outils-container #fiches-infos .container-docs a:hover img,
+#outils #menu-outils .outils-container #affiches .container-docs a:hover img,
+#outils #menu-outils .outils-container #dossiers .container-docs a:hover img,
+#outils #menu-outils .outils-container #tracts .container-docs a:hover img,
+#outils #menu-outils .outils-container #les-essentiels .container-docs a:hover img {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+#outils #menu-outils .outils-container #tous-les-outils .container-docs a img,
+#outils #menu-outils .outils-container #outils-syndicaux .container-docs a img,
+#outils #menu-outils .outils-container #fiches-infos .container-docs a img,
+#outils #menu-outils .outils-container #affiches .container-docs a img,
+#outils #menu-outils .outils-container #dossiers .container-docs a img,
+#outils #menu-outils .outils-container #tracts .container-docs a img,
+#outils #menu-outils .outils-container #les-essentiels .container-docs a img {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+#faq .questions-answers {
+  margin: 50px;
+  padding: 50px;
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+#faq .questions-answers .question-item {
+  border-bottom: 1px solid #8b0000;
+}
+#faq .questions-answers .question-item .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+#faq .questions-answers .question-item .question h2 {
+  font-weight: normal;
+  font-family: "poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: left;
+  font-size: 1rem;
+  color: #000;
+  padding: 20px;
+}
+#faq .questions-answers .question-item .answer {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
+}
+#faq .questions-answers .question-item .answer p {
+  margin: 0 20px 20px;
+  padding: 0 20px;
+  text-align: justify;
+  font-size: 0.9rem;
+}
+#faq .questions-answers .question-item .answer p a {
+  font-size: 0.9rem;
+}
+#faq .questions-answers .question-item .fa-chevron-down {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
 #nous-contacter .section {
   padding: 50px;
 }
@@ -1217,133 +1401,4 @@ footer .footer-copyright .heart {
 #nous-contacter #infos-contact .right-bar form textarea:active, #nous-contacter #infos-contact .right-bar form textarea:focus, #nous-contacter #infos-contact .right-bar form textarea:hover {
   outline: none;
   border: 1px solid #8b0000;
-}
-
-#outils .section {
-  padding: 50px;
-}
-#outils .section h2 {
-  color: #8b0000;
-  margin-bottom: 30px;
-  text-align: left;
-  text-transform: uppercase;
-}
-#outils .section h2:after {
-  margin-top: 20px;
-  display: block;
-  content: "   ";
-  height: 1px;
-  width: 50px;
-  border-top: 3px solid #8b0000;
-}
-#outils #menu-outils {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  gap: 20px;
-}
-#outils #menu-outils .left-bar-outils ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-}
-#outils #menu-outils .left-bar-outils ul li {
-  width: 100%;
-  margin: 0 auto;
-  padding: 10px;
-  list-style: none;
-  border: 1px solid #f1f1f1;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  cursor: pointer;
-}
-#outils #menu-outils .left-bar-outils ul li:first-of-type {
-  border-radius: 10px 10px 0 0;
-}
-#outils #menu-outils .left-bar-outils ul li:last-of-type {
-  border-radius: 0 0 10px 10px;
-}
-#outils #menu-outils .left-bar-outils ul li:hover {
-  background: linear-gradient(135deg, #b80000, #8b0000);
-  color: #fff;
-}
-#outils #menu-outils .outils-container #tous-les-outils,
-#outils #menu-outils .outils-container #outils-syndicaux,
-#outils #menu-outils .outils-container #fiches-infos,
-#outils #menu-outils .outils-container #affiches,
-#outils #menu-outils .outils-container #dossiers,
-#outils #menu-outils .outils-container #tracts,
-#outils #menu-outils .outils-container #les-essentiels {
-  display: none;
-  -webkit-animation: fadeIn 1s linear;
-          animation: fadeIn 1s linear;
-}
-#outils #menu-outils .outils-container #tous-les-outils .container-docs,
-#outils #menu-outils .outils-container #outils-syndicaux .container-docs,
-#outils #menu-outils .outils-container #fiches-infos .container-docs,
-#outils #menu-outils .outils-container #affiches .container-docs,
-#outils #menu-outils .outils-container #dossiers .container-docs,
-#outils #menu-outils .outils-container #tracts .container-docs,
-#outils #menu-outils .outils-container #les-essentiels .container-docs {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-}
-#outils #menu-outils .outils-container #tous-les-outils .container-docs a,
-#outils #menu-outils .outils-container #outils-syndicaux .container-docs a,
-#outils #menu-outils .outils-container #fiches-infos .container-docs a,
-#outils #menu-outils .outils-container #affiches .container-docs a,
-#outils #menu-outils .outils-container #dossiers .container-docs a,
-#outils #menu-outils .outils-container #tracts .container-docs a,
-#outils #menu-outils .outils-container #les-essentiels .container-docs a {
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
-}
-#outils #menu-outils .outils-container #tous-les-outils .container-docs a:hover,
-#outils #menu-outils .outils-container #outils-syndicaux .container-docs a:hover,
-#outils #menu-outils .outils-container #fiches-infos .container-docs a:hover,
-#outils #menu-outils .outils-container #affiches .container-docs a:hover,
-#outils #menu-outils .outils-container #dossiers .container-docs a:hover,
-#outils #menu-outils .outils-container #tracts .container-docs a:hover,
-#outils #menu-outils .outils-container #les-essentiels .container-docs a:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-#outils #menu-outils .outils-container #tous-les-outils .container-docs a:hover img,
-#outils #menu-outils .outils-container #outils-syndicaux .container-docs a:hover img,
-#outils #menu-outils .outils-container #fiches-infos .container-docs a:hover img,
-#outils #menu-outils .outils-container #affiches .container-docs a:hover img,
-#outils #menu-outils .outils-container #dossiers .container-docs a:hover img,
-#outils #menu-outils .outils-container #tracts .container-docs a:hover img,
-#outils #menu-outils .outils-container #les-essentiels .container-docs a:hover img {
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-}
-#outils #menu-outils .outils-container #tous-les-outils .container-docs a img,
-#outils #menu-outils .outils-container #outils-syndicaux .container-docs a img,
-#outils #menu-outils .outils-container #fiches-infos .container-docs a img,
-#outils #menu-outils .outils-container #affiches .container-docs a img,
-#outils #menu-outils .outils-container #dossiers .container-docs a img,
-#outils #menu-outils .outils-container #tracts .container-docs a img,
-#outils #menu-outils .outils-container #les-essentiels .container-docs a img {
-  width: 100%;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
 }/*# sourceMappingURL=index.css.map */

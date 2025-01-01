@@ -1,0 +1,95 @@
+#outils {
+  .section {
+    padding: 50px;
+    h2 {
+      color: $color1;
+      margin-bottom: 30px;
+      text-align: left;
+      text-transform: uppercase;
+
+      &:after {
+        margin-top: 20px;
+        display: block;
+        content: "   ";
+        height: 1px;
+        width: 50px;
+        border-top: 3px solid $color1;
+      }
+    }
+  }
+
+  #menu-outils {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 20px;
+
+    .left-bar-outils {
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0 0 5px $blackShadow;
+
+        li {
+          width: 100%;
+          margin: 0 auto;
+          padding: 10px;
+          list-style: none;
+          border: 1px solid $border;
+          transition: 0.2s;
+          text-transform: uppercase;
+          font-size: 0.9rem;
+
+          &:first-of-type {
+            border-radius: 10px 10px 0 0;
+          }
+
+          &:last-of-type {
+            border-radius: 0 0 10px 10px;
+          }
+
+          &:hover {
+            background: $degrade;
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .outils-container {
+      #tous-les-outils,
+      #outils-syndicaux,
+      #fiches-infos,
+      #affiches,
+      #dossiers,
+      #tracts,
+      #les-essentiels {
+        display: none;
+        .container-docs {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          gap: 20px;
+
+          a {
+            transition: 0.2s ease;
+            &:hover {
+              transform: scale(1.05);
+
+              img {
+                box-shadow: 0 0 10px $blackShadow;
+              }
+            }
+            img {
+              width: 100%;
+              border-radius: 10px;
+              box-shadow: 0 0 5px $blackShadow;
+              transition: 0.2s ease;
+            }
+          }
+        }
+      }
+    }
+  }
+}

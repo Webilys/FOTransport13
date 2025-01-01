@@ -35,3 +35,81 @@ function openSousNav3() {
 function closeSousNav3() {
   sousNav3.style.display = "none";
 }
+
+//Gestion du menu outils avec affichage des outils selon catégories
+
+const tousLesOutils = document.getElementById("tous-les-outils");
+const outilsSyndicaux = document.getElementById("outils-syndicaux");
+const fichesInfos = document.getElementById("fiches-infos");
+const affiches = document.getElementById("affiches");
+const dossiers = document.getElementById("dossiers");
+const tracts = document.getElementById("tracts");
+const lesEssentiels = document.getElementById("les-essentiels");
+
+function afficherTousLesOutils() {
+  tousLesOutils.style.display = "block";
+  outilsSyndicaux.style.display = "none";
+  fichesInfos.style.display = "none";
+  affiches.style.display = "none";
+  dossiers.style.display = "none";
+  tracts.style.display = "none";
+  lesEssentiels.style.display = "none";
+}
+
+function afficherOutilsSyndicaux() {
+  tousLesOutils.style.display = "none";
+  outilsSyndicaux.style.display = "block";
+  fichesInfos.style.display = "none";
+  affiches.style.display = "none";
+  dossiers.style.display = "none";
+  tracts.style.display = "none";
+  lesEssentiels.style.display = "none";
+}
+
+function afficherFichesInfos() {
+  tousLesOutils.style.display = "none";
+  outilsSyndicaux.style.display = "none";
+  fichesInfos.style.display = "block";
+  affiches.style.display = "none";
+  dossiers.style.display = "none";
+  tracts.style.display = "none";
+  lesEssentiels.style.display = "none";
+}
+function afficherAffiches() {
+  tousLesOutils.style.display = "none";
+  outilsSyndicaux.style.display = "none";
+  fichesInfos.style.display = "none";
+  affiches.style.display = "block";
+  dossiers.style.display = "none";
+  tracts.style.display = "none";
+  lesEssentiels.style.display = "none";
+}
+function afficherDossiers() {
+  tousLesOutils.style.display = "none";
+  outilsSyndicaux.style.display = "none";
+  fichesInfos.style.display = "none";
+  affiches.style.display = "none";
+  dossiers.style.display = "block";
+  tracts.style.display = "none";
+  lesEssentiels.style.display = "none";
+}
+function afficherTracts() {
+  tousLesOutils.style.display = "none";
+  outilsSyndicaux.style.display = "none";
+  fichesInfos.style.display = "none";
+  affiches.style.display = "none";
+  dossiers.style.display = "none";
+  tracts.style.display = "block";
+  lesEssentiels.style.display = "none";
+}
+function afficherLesEssentiels() {
+  tousLesOutils.style.display = "none";
+  outilsSyndicaux.style.display = "none";
+  fichesInfos.style.display = "none";
+  affiches.style.display = "none";
+  dossiers.style.display = "none";
+  tracts.style.display = "none";
+  lesEssentiels.style.display = "block";
+}
+
+afficherTousLesOutils();

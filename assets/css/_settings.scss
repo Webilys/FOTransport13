@@ -51,6 +51,7 @@ $degrade2: linear-gradient(135deg, rgba(184, 0, 0, 0.7), rgba(139, 0, 0, 0.7));
   font-family: $font3;
   color: $black;
   scroll-behavior: smooth;
+  cursor: default;
 }
 
 body {
@@ -77,6 +78,8 @@ i {
 
 a {
   transition: 0.2s;
+  cursor: pointer;
+
   &:hover {
     color: $color1;
   }

@@ -41,6 +41,7 @@
           transition: 0.2s;
           text-transform: uppercase;
           font-size: 0.9rem;
+          cursor: pointer;
 
           &:first-of-type {
             border-radius: 10px 10px 0 0;
@@ -67,6 +68,7 @@
       #tracts,
       #les-essentiels {
         display: none;
+        animation: fadeIn 1s linear;
         .container-docs {
           display: grid;
           grid-template-columns: repeat(5, 1fr);

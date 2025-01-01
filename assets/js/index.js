@@ -42,7 +42,6 @@ const tousLesOutils = document.getElementById("tous-les-outils");
 const outilsSyndicaux = document.getElementById("outils-syndicaux");
 const fichesInfos = document.getElementById("fiches-infos");
 const affiches = document.getElementById("affiches");
-const dossiers = document.getElementById("dossiers");
 const tracts = document.getElementById("tracts");
 const lesEssentiels = document.getElementById("les-essentiels");
 
@@ -51,7 +50,6 @@ function afficherTousLesOutils() {
   outilsSyndicaux.style.display = "none";
   fichesInfos.style.display = "none";
   affiches.style.display = "none";
-  dossiers.style.display = "none";
   tracts.style.display = "none";
   lesEssentiels.style.display = "none";
 }
@@ -61,7 +59,6 @@ function afficherOutilsSyndicaux() {
   outilsSyndicaux.style.display = "block";
   fichesInfos.style.display = "none";
   affiches.style.display = "none";
-  dossiers.style.display = "none";
   tracts.style.display = "none";
   lesEssentiels.style.display = "none";
 }
@@ -71,7 +68,6 @@ function afficherFichesInfos() {
   outilsSyndicaux.style.display = "none";
   fichesInfos.style.display = "block";
   affiches.style.display = "none";
-  dossiers.style.display = "none";
   tracts.style.display = "none";
   lesEssentiels.style.display = "none";
 }
@@ -80,7 +76,6 @@ function afficherAffiches() {
   outilsSyndicaux.style.display = "none";
   fichesInfos.style.display = "none";
   affiches.style.display = "block";
-  dossiers.style.display = "none";
   tracts.style.display = "none";
   lesEssentiels.style.display = "none";
 }
@@ -89,7 +84,6 @@ function afficherDossiers() {
   outilsSyndicaux.style.display = "none";
   fichesInfos.style.display = "none";
   affiches.style.display = "none";
-  dossiers.style.display = "block";
   tracts.style.display = "none";
   lesEssentiels.style.display = "none";
 }
@@ -98,7 +92,6 @@ function afficherTracts() {
   outilsSyndicaux.style.display = "none";
   fichesInfos.style.display = "none";
   affiches.style.display = "none";
-  dossiers.style.display = "none";
   tracts.style.display = "block";
   lesEssentiels.style.display = "none";
 }
@@ -107,7 +100,6 @@ function afficherLesEssentiels() {
   outilsSyndicaux.style.display = "none";
   fichesInfos.style.display = "none";
   affiches.style.display = "none";
-  dossiers.style.display = "none";
   tracts.style.display = "none";
   lesEssentiels.style.display = "block";
 }

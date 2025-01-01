@@ -50,3 +50,23 @@
     }
   }
 }
+
+#adhesion-simple {
+  .section {
+    padding: 50px 50px 20px;
+  }
+  .adhesion-form {
+    padding: 0 50px 70px;
+    form {
+      width: 50%;
+      text-align: center;
+    }
+    label {
+      padding: 20px;
+    }
+    input {
+      display: block;
+      width: 100%;
+    }
+  }
+}

@@ -155,6 +155,17 @@
           <h1>Bulletin d'adhésion simple</h1>
         </div>
       </section>
+      <div class="intro section">
+        <p>
+          Vous souhaitez rejoindre notre syndicat et bénéficier de
+          l’accompagnement et des avantages réservés à nos adhérents ? Complétez
+          le formulaire d’adhésion simple ci-dessous. Cette démarche vous
+          permettra de vous engager à nos côtés pour défendre vos droits et
+          participer activement à la vie syndicale. <br /><br />
+          Rejoignez dès aujourd’hui une communauté de travailleurs solidaires et
+          engagés dans le secteur du transport et de la logistique !
+        </p>
+      </div>
       <section class="adhesion-form section">
         <form action="">
           <label for="nom">
@@ -222,6 +233,70 @@
               required
             />
           </label>
+          <label for="profession">
+            Profession* :
+            <input
+              type="text"
+              name="profession"
+              id="profession"
+              placeholder="Profession"
+              required
+            />
+          </label>
+          <label for="nomdelentreprise">
+            Nom de l'entreprise* :
+            <input
+              type="text"
+              name="nomdelentreprise"
+              id="nomdelentreprise"
+              placeholder="Nom de l'entreprise"
+              required
+            />
+          </label>
+          <label for="adressedelentreprise">
+            Adresse complete de l'entreprise* :
+            <input
+              type="text"
+              name="adressedelentreprise"
+              id="adressedelentreprise"
+              placeholder="Adresse complete de l'entreprise"
+              required
+            />
+          </label>
+          <label for="codenaf">
+            Code N.A.F. (APE)* :
+            <input
+              type="text"
+              name="codenaf"
+              id="codenaf"
+              maxlength="5"
+              placeholder="Code N.A.F."
+              required
+            />
+          </label>
+          <input
+            type="checkbox"
+            name="souhait-adhesion"
+            id="souhait-adhesion"
+          />
+          <option value="souhait-adhesion">
+            Je déclare adhérer au Syndicat Départemental Force Ouvrière des
+            Transports et de la Logistique des Bouches-du-Rhône en m'acquittant
+            de ma cotisation annuelle soit par chèques, soit par prélèvements
+            mensuels, soit par carte bancaire, dont le montant est fixé chaque
+            année par le bureau exécutif et la Commission Administrative du
+            Syndicat.
+          </option>
+          <input
+            type="checkbox"
+            name="souhait-adhesion"
+            id="souhait-adhesion"
+          />
+          <option value="souhait-adhesion">
+            Je reconnais avoir lu et approuvé ce bulletin d'adhésion, ainsi que
+            ces mentions.
+          </option>
+          <button type="submit">Envoyer la demande</button>
         </form>
       </section>
 

@@ -1465,4 +1465,22 @@ footer .footer-copyright .heart {
 }
 #je-souhaite-adherer .section .selection-container a .selection-item div h2 {
   color: #fff;
+}
+
+#adhesion-simple .section {
+  padding: 50px 50px 20px;
+}
+#adhesion-simple .adhesion-form {
+  padding: 0 50px 70px;
+}
+#adhesion-simple .adhesion-form form {
+  width: 50%;
+  text-align: center;
+}
+#adhesion-simple .adhesion-form label {
+  padding: 20px;
+}
+#adhesion-simple .adhesion-form input {
+  display: block;
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */

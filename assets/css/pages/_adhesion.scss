@@ -53,20 +53,28 @@
 
 #adhesion-simple {
   .section {
-    padding: 50px 50px 20px;
+    padding: 0px 50px 20px;
   }
   .adhesion-form {
     padding: 0 50px 70px;
     form {
-      width: 50%;
+      width: 80%;
+      margin: 0 auto;
       text-align: center;
+      border-radius: 10px;
+      background: $degrade;
     }
     label {
       padding: 20px;
     }
     input {
+      text-align: center;
       display: block;
-      width: 100%;
+      width: 80%;
+      margin: 0 auto;
+      padding: 5px 10px;
+      margin: 10px;
+      font-size: 1rem;
     }
   }
 }

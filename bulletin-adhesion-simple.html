@@ -155,7 +155,75 @@
           <h1>Bulletin d'adhésion simple</h1>
         </div>
       </section>
-      <section class="section"></section>
+      <section class="adhesion-form section">
+        <form action="">
+          <label for="nom">
+            Nom et prénom* :
+            <input
+              type="text"
+              name="nom"
+              id="nom"
+              placeholder="Nom et prénom"
+              required
+            />
+          </label>
+          <label for="datedenaissance">
+            Date de naissance* :
+            <input type="date" name="datedenaissance" id="date" />
+          </label>
+          <label for="lieudenaissance">
+            Lieu de naissance* :
+            <input
+              type="text"
+              name="lieudenaissance"
+              id="lieudenaissance"
+              placeholder="Lieu de naissance"
+              required
+            />
+          </label>
+          <label for="adresse">
+            Adresse complète* :
+            <input
+              type="text"
+              name="adresse"
+              id="adresse"
+              placeholder="Adresse complète"
+              required
+            />
+          </label>
+          <label for="tel-fixe">
+            Téléphone fixe (facultatif) :
+            <input
+              type="text"
+              name="tel-fixe"
+              id="tel-fixe"
+              maxlength="10"
+              placeholder="Téléphone fixe"
+            />
+          </label>
+          <label for="tel-portable">
+            Portable* :
+            <input
+              type="text"
+              name="tel-portable"
+              id="tel-portable"
+              maxlength="10"
+              placeholder="Portable"
+              required
+            />
+          </label>
+          <label for="email">
+            Email* :
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+          </label>
+        </form>
+      </section>
 
       <section class="cta">
         <div class="overlay">

@@ -1090,6 +1090,45 @@ footer .footer-copyright .heart {
   border-top: 3px solid #8b0000;
 }
 
+#vos-droits #droit-adherent {
+  padding: 0;
+  margin: 0 50px 50px;
+  background: url(../img/cta.webp) center/cover;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+#vos-droits #droit-adherent div {
+  margin: 0;
+  padding: 50px;
+  background: linear-gradient(135deg, rgba(184, 0, 0, 0.7), rgba(139, 0, 0, 0.7));
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#vos-droits #droit-adherent div h2 {
+  color: #fff;
+  text-align: center;
+}
+#vos-droits #droit-adherent div h2:after {
+  margin: 20px auto 0;
+  border-top: 3px solid #fff;
+}
+#vos-droits #droit-adherent div p {
+  color: #fff;
+}
+
 #outils .section {
   padding: 50px;
 }
@@ -1468,13 +1507,13 @@ footer .footer-copyright .heart {
   color: #fff;
 }
 
-#adhesion-simple .section {
+#adhesion .section {
   padding: 0px 50px 20px;
 }
-#adhesion-simple .adhesion-form {
+#adhesion .adhesion-form {
   padding: 0 50px 70px;
 }
-#adhesion-simple .adhesion-form form {
+#adhesion .adhesion-form form {
   margin: 0 auto;
   text-align: left;
   border-radius: 10px;
@@ -1483,7 +1522,7 @@ footer .footer-copyright .heart {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
-#adhesion-simple .adhesion-form form div {
+#adhesion .adhesion-form form div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1495,7 +1534,7 @@ footer .footer-copyright .heart {
       -ms-flex-align: center;
           align-items: center;
 }
-#adhesion-simple .adhesion-form form div input {
+#adhesion .adhesion-form form div input {
   padding: 5px 10px;
   margin: 0 5px;
   font-size: 1rem;
@@ -1506,18 +1545,18 @@ footer .footer-copyright .heart {
   border-bottom: 1px solid #000;
   border-radius: 3px;
 }
-#adhesion-simple .adhesion-form form div input:active, #adhesion-simple .adhesion-form form div input:focus, #adhesion-simple .adhesion-form form div input:hover {
+#adhesion .adhesion-form form div input:active, #adhesion .adhesion-form form div input:focus, #adhesion .adhesion-form form div input:hover {
   outline: none;
   border-bottom: 1px solid #8b0000;
 }
-#adhesion-simple .adhesion-form form button {
+#adhesion .adhesion-form form button {
   margin-top: 30px;
   cursor: url(../img/cursor-hover.ico), pointer;
 }
-#adhesion-simple .adhesion-form form input[type=checkbox] {
+#adhesion .adhesion-form form input[type=checkbox] {
   width: auto;
 }
-#adhesion-simple .adhesion-form form p {
+#adhesion .adhesion-form form p {
   display: block;
   margin-left: 10px;
 }/*# sourceMappingURL=index.css.map */

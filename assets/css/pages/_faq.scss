@@ -12,7 +12,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        cursor: pointer;
+        cursor: url(../img/cursor-hover.ico), pointer;
 
         h2 {
           font-weight: normal;

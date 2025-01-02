@@ -41,7 +41,7 @@
           transition: 0.2s;
           text-transform: uppercase;
           font-size: 0.9rem;
-          cursor: pointer;
+          cursor: url(../img/cursor-hover.ico), pointer;
 
           &:first-of-type {
             border-radius: 10px 10px 0 0;

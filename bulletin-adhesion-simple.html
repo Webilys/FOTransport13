@@ -168,22 +168,24 @@
       </div>
       <section class="adhesion-form section">
         <form action="">
-          <label for="nom">
-            Nom et prénom* :
+          <div>
             <input
               type="text"
               name="nom"
               id="nom"
-              placeholder="Nom et prénom"
+              placeholder="Nom et prénom*"
               required
             />
-          </label>
-          <label for="datedenaissance">
-            Date de naissance* :
-            <input type="date" name="datedenaissance" id="date" />
-          </label>
-          <label for="lieudenaissance">
-            Lieu de naissance* :
+          </div>
+          <div>
+            <input
+              type="text"
+              name="datedenaissance"
+              id="date"
+              placeholder="Date de naissance*"
+              maxlength="10"
+              required
+            />
             <input
               type="text"
               name="lieudenaissance"
@@ -191,111 +193,107 @@
               placeholder="Lieu de naissance"
               required
             />
-          </label>
-          <label for="adresse">
-            Adresse complète* :
+          </div>
+          <div>
             <input
               type="text"
               name="adresse"
               id="adresse"
-              placeholder="Adresse complète"
+              placeholder="Adresse complète*"
               required
             />
-          </label>
-          <label for="tel-fixe">
-            Téléphone fixe (facultatif) :
+          </div>
+          <div>
             <input
               type="text"
               name="tel-fixe"
               id="tel-fixe"
               maxlength="10"
-              placeholder="Téléphone fixe"
+              placeholder="Téléphone fixe (facultatif)"
             />
-          </label>
-          <label for="tel-portable">
-            Portable* :
             <input
               type="text"
               name="tel-portable"
               id="tel-portable"
               maxlength="10"
-              placeholder="Portable"
+              placeholder="Portable*"
               required
             />
-          </label>
-          <label for="email">
-            Email* :
+          </div>
+          <div>
             <input
               type="text"
               name="email"
               id="email"
-              placeholder="Email"
+              placeholder="Email*"
               required
             />
-          </label>
-          <label for="profession">
-            Profession* :
+          </div>
+          <div>
             <input
               type="text"
               name="profession"
               id="profession"
-              placeholder="Profession"
+              placeholder="Profession*"
               required
             />
-          </label>
-          <label for="nomdelentreprise">
-            Nom de l'entreprise* :
+          </div>
+          <div>
             <input
               type="text"
               name="nomdelentreprise"
               id="nomdelentreprise"
-              placeholder="Nom de l'entreprise"
+              placeholder="Nom de l'entreprise*"
               required
             />
-          </label>
-          <label for="adressedelentreprise">
-            Adresse complete de l'entreprise* :
+          </div>
+          <div>
+            <label for="adressedelentreprise"> </label>
             <input
               type="text"
               name="adressedelentreprise"
               id="adressedelentreprise"
-              placeholder="Adresse complete de l'entreprise"
+              placeholder="Adresse complete de l'entreprise*"
               required
             />
-          </label>
-          <label for="codenaf">
-            Code N.A.F. (APE)* :
+          </div>
+
+          <div>
             <input
               type="text"
               name="codenaf"
               id="codenaf"
               maxlength="5"
-              placeholder="Code N.A.F."
+              placeholder="Code N.A.F. (APE)*"
               required
             />
-          </label>
-          <input
-            type="checkbox"
-            name="souhait-adhesion"
-            id="souhait-adhesion"
-          />
-          <option value="souhait-adhesion">
-            Je déclare adhérer au Syndicat Départemental Force Ouvrière des
-            Transports et de la Logistique des Bouches-du-Rhône en m'acquittant
-            de ma cotisation annuelle soit par chèques, soit par prélèvements
-            mensuels, soit par carte bancaire, dont le montant est fixé chaque
-            année par le bureau exécutif et la Commission Administrative du
-            Syndicat.
-          </option>
-          <input
-            type="checkbox"
-            name="souhait-adhesion"
-            id="souhait-adhesion"
-          />
-          <option value="souhait-adhesion">
-            Je reconnais avoir lu et approuvé ce bulletin d'adhésion, ainsi que
-            ces mentions.
-          </option>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="souhait-adhesion"
+              id="souhait-adhesion"
+            />
+            <p>
+              Je déclare adhérer au Syndicat Départemental Force Ouvrière des
+              Transports et de la Logistique des Bouches-du-Rhône en
+              m'acquittant de ma cotisation annuelle soit par chèques, soit par
+              prélèvements mensuels, soit par carte bancaire, dont le montant
+              est fixé chaque année par le bureau exécutif et la Commission
+              Administrative du Syndicat.
+            </p>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="souhait-adhesion"
+              id="souhait-adhesion"
+            />
+            <p>
+              Je reconnais avoir lu et approuvé ce bulletin d'adhésion, ainsi
+              que ces mentions.
+            </p>
+          </div>
           <button type="submit">Envoyer la demande</button>
         </form>
       </section>

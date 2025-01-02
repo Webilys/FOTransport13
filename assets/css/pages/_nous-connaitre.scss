@@ -68,6 +68,14 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
 
+      @media screen and (max-width: 1000px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media screen and (max-width: 630px) {
+        grid-template-columns: 1fr;
+      }
+
       .service {
         border: 3px solid $color1;
         padding: 20px;
@@ -140,6 +148,14 @@
         gap: 20px;
         margin-top: 30px;
 
+        @media screen and (max-width: 1000px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (max-width: 630px) {
+          grid-template-columns: 1fr;
+        }
+
         .revendication {
           padding: 20px;
           border: 3px solid $white;
@@ -168,6 +184,14 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
+
+      @media screen and (max-width: 1000px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media screen and (max-width: 630px) {
+        grid-template-columns: 1fr;
+      }
 
       .valeur {
         border: 3px solid $color1;
@@ -241,6 +265,10 @@
         gap: 50px;
         margin-top: 30px;
 
+        @media screen and (max-width: 1000px) {
+          grid-template-columns: 1fr;
+        }
+
         .fonctionnement-item {
           padding: 20px;
           border: 3px solid $white;
@@ -253,6 +281,9 @@
 
           &:first-of-type {
             margin-left: 30px;
+            @media screen and (max-width: 1000px) {
+              margin: 0;
+            }
           }
 
           i {

@@ -31,6 +31,14 @@
     padding: 0 50px 70px;
     gap: 20px;
 
+    @media screen and (max-width: 1010px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 665px) {
+      grid-template-columns: 1fr;
+    }
+
     h2 {
       color: $color1;
       margin-bottom: 30px;

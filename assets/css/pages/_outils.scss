@@ -23,6 +23,10 @@
     grid-template-columns: 20% 80%;
     gap: 20px;
 
+    @media screen and (max-width: 850px) {
+      grid-template-columns: 1fr;
+    }
+
     .left-bar-outils {
       ul {
         display: flex;
@@ -31,6 +35,17 @@
         align-items: center;
         border-radius: 10px;
         box-shadow: 0 0 5px $blackShadow;
+
+        @media screen and (max-width: 850px) {
+          flex-direction: row;
+          padding: 0;
+          margin: 0;
+          height: 100%;
+        }
+
+        @media screen and (max-width: 750px) {
+          flex-direction: column;
+        }
 
         li {
           width: 100%;
@@ -43,12 +58,33 @@
           font-size: 0.9rem;
           cursor: url(../img/cursor-hover.ico), pointer;
 
+          @media screen and (max-width: 850px) {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          @media screen and (max-width: 750px) {
+            padding: 10px;
+          }
+
           &:first-of-type {
             border-radius: 10px 10px 0 0;
+
+            @media screen and (max-width: 850px) {
+              border-radius: 10px 0 0 10px;
+            }
           }
 
           &:last-of-type {
             border-radius: 0 0 10px 10px;
+
+            @media screen and (max-width: 850px) {
+              border-radius: 0 10px 10px 0;
+            }
           }
 
           &:hover {
@@ -73,6 +109,18 @@
           display: grid;
           grid-template-columns: repeat(5, 1fr);
           gap: 20px;
+
+          @media screen and (max-width: 810px) {
+            grid-template-columns: repeat(3, 1fr);
+          }
+
+          @media screen and (max-width: 590px) {
+            grid-template-columns: repeat(2, 1fr);
+          }
+
+          @media screen and (max-width: 500px) {
+            grid-template-columns: 1fr;
+          }
 
           a {
             transition: 0.2s ease;

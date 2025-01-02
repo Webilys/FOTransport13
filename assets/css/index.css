@@ -1090,7 +1090,24 @@ footer .footer-copyright .heart {
   border-top: 3px solid #8b0000;
 }
 
-#vos-droits #droit-adherent {
+#vos-droits .section {
+  padding: 50px;
+}
+#vos-droits .section h2 {
+  color: #8b0000;
+  margin-bottom: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+#vos-droits .section h2:after {
+  margin-top: 20px;
+  display: block;
+  content: "   ";
+  height: 1px;
+  width: 50px;
+  border-top: 3px solid #8b0000;
+}
+#vos-droits #droits-adherent {
   padding: 0;
   margin: 0 50px 50px;
   background: url(../img/cta.webp) center/cover;
@@ -1098,7 +1115,7 @@ footer .footer-copyright .heart {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
-#vos-droits #droit-adherent div {
+#vos-droits #droits-adherent .droits-div {
   margin: 0;
   padding: 50px;
   background: linear-gradient(135deg, rgba(184, 0, 0, 0.7), rgba(139, 0, 0, 0.7));
@@ -1117,16 +1134,225 @@ footer .footer-copyright .heart {
       -ms-flex-align: center;
           align-items: center;
 }
-#vos-droits #droit-adherent div h2 {
+#vos-droits #droits-adherent .droits-div h2 {
   color: #fff;
   text-align: center;
 }
-#vos-droits #droit-adherent div h2:after {
+#vos-droits #droits-adherent .droits-div h2:after {
   margin: 20px auto 0;
   border-top: 3px solid #fff;
 }
-#vos-droits #droit-adherent div p {
+#vos-droits #droits-adherent .droits-div p {
   color: #fff;
+}
+#vos-droits #droits-adherent .droits-div .droits-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+#vos-droits #droits-adherent .droits-div .droits-container .droit {
+  padding: 20px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#vos-droits #protection-juridique {
+  text-align: center;
+}
+#vos-droits #protection-juridique h2 {
+  text-align: center;
+}
+#vos-droits #protection-juridique h2:after {
+  margin: 20px auto 0;
+}
+#vos-droits #protection-juridique .protection-container {
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+#vos-droits #protection-juridique .protection-container .protection {
+  border: 3px solid #8b0000;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+#vos-droits #protection-juridique .protection-container .protection i {
+  font-size: 2rem;
+  color: #8b0000;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#vos-droits #protection-juridique .protection-container .protection h3 {
+  color: #8b0000;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#vos-droits #protection-juridique .protection-container .protection h3:after {
+  margin: 20px auto 0;
+  display: block;
+  content: "   ";
+  height: 1px;
+  width: 50px;
+  border-top: 3px solid #8b0000;
+}
+#vos-droits #formation-syndicale {
+  padding: 0;
+  margin: 0 50px 50px;
+  background: url(../img/assemblee.webp) top/cover;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+#vos-droits #formation-syndicale .formation-div {
+  margin: 0;
+  padding: 50px;
+  background: linear-gradient(135deg, rgba(184, 0, 0, 0.7), rgba(139, 0, 0, 0.7));
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#vos-droits #formation-syndicale .formation-div h2 {
+  color: #fff;
+  text-align: center;
+}
+#vos-droits #formation-syndicale .formation-div h2:after {
+  margin: 20px auto 0;
+  border-top: 3px solid #fff;
+}
+#vos-droits #formation-syndicale .formation-div p {
+  color: #fff;
+}
+#vos-droits #formation-syndicale .formation-div .formation-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-top: 30px;
+}
+#vos-droits #formation-syndicale .formation-div .formation-container .formation-item {
+  padding: 20px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#vos-droits #formation-syndicale .formation-div .formation-container .formation-item:first-of-type {
+  margin-left: 30px;
+}
+#vos-droits #formation-syndicale .formation-div .formation-container .formation-item i {
+  background: #fff;
+  width: 70px;
+  height: 70px;
+  border-radius: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #8b0000;
+  -webkit-transform: translateX(-55px);
+          transform: translateX(-55px);
+}
+#vos-droits #soutien-specifique {
+  text-align: center;
+}
+#vos-droits #soutien-specifique h2 {
+  text-align: center;
+}
+#vos-droits #soutien-specifique h2:after {
+  margin: 20px auto 0;
+}
+#vos-droits #soutien-specifique .soutien-container {
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+#vos-droits #soutien-specifique .soutien-container .soutien {
+  border: 3px solid #8b0000;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+#vos-droits #soutien-specifique .soutien-container .soutien i {
+  font-size: 2rem;
+  color: #8b0000;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#vos-droits #soutien-specifique .soutien-container .soutien h3 {
+  color: #8b0000;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#vos-droits #soutien-specifique .soutien-container .soutien h3:after {
+  margin: 20px auto 0;
+  display: block;
+  content: "   ";
+  height: 1px;
+  width: 50px;
+  border-top: 3px solid #8b0000;
 }
 
 #outils .section {

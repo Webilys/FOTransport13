@@ -1,12 +1,31 @@
 #vos-droits {
-  #droit-adherent {
+  .section {
+    padding: 50px;
+    h2 {
+      color: $color1;
+      margin-bottom: 30px;
+      text-align: left;
+      text-transform: uppercase;
+
+      &:after {
+        margin-top: 20px;
+        display: block;
+        content: "   ";
+        height: 1px;
+        width: 50px;
+        border-top: 3px solid $color1;
+      }
+    }
+  }
+
+  #droits-adherent {
     padding: 0;
     margin: 0 50px 50px;
     background: url(../img/cta.webp) center/cover;
     border-radius: 10px;
     box-shadow: 0 0 5px $blackShadow;
 
-    div {
+    .droits-div {
       margin: 0;
       padding: 50px;
       background: $degrade2;
@@ -28,6 +47,193 @@
 
       p {
         color: $white;
+      }
+
+      .droits-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin-top: 30px;
+
+        .droit {
+          padding: 20px;
+          border: 3px solid $white;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  #protection-juridique {
+    text-align: center;
+
+    h2 {
+      text-align: center;
+
+      &:after {
+        margin: 20px auto 0;
+      }
+    }
+
+    .protection-container {
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+
+      .protection {
+        border: 3px solid $color1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0 0 5px $blackShadow;
+
+        i {
+          font-size: 2rem;
+          color: $color1;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+        h3 {
+          color: $color1;
+          margin-bottom: 20px;
+          text-align: center;
+          text-transform: uppercase;
+
+          &:after {
+            margin: 20px auto 0;
+            display: block;
+            content: "   ";
+            height: 1px;
+            width: 50px;
+            border-top: 3px solid $color1;
+          }
+        }
+      }
+    }
+  }
+
+  #formation-syndicale {
+    padding: 0;
+    margin: 0 50px 50px;
+    background: url(../img/assemblee.webp) top/cover;
+    border-radius: 10px;
+    box-shadow: 0 0 5px $blackShadow;
+
+    .formation-div {
+      margin: 0;
+      padding: 50px;
+      background: $degrade2;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        color: $white;
+        text-align: center;
+
+        &:after {
+          margin: 20px auto 0;
+          border-top: 3px solid $white;
+        }
+      }
+
+      p {
+        color: $white;
+      }
+
+      .formation-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        margin-top: 30px;
+
+        .formation-item {
+          padding: 20px;
+          border: 3px solid $white;
+          border-radius: 10px;
+          display: grid;
+          grid-template-columns: 10% 90%;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+
+          &:first-of-type {
+            margin-left: 30px;
+          }
+
+          i {
+            background: $white;
+            width: 70px;
+            height: 70px;
+            border-radius: 360px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $color1;
+            transform: translateX(-55px);
+          }
+        }
+      }
+    }
+  }
+
+  #soutien-specifique {
+    text-align: center;
+
+    h2 {
+      text-align: center;
+
+      &:after {
+        margin: 20px auto 0;
+      }
+    }
+
+    .soutien-container {
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+
+      .soutien {
+        border: 3px solid $color1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0 0 5px $blackShadow;
+
+        i {
+          font-size: 2rem;
+          color: $color1;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+        h3 {
+          color: $color1;
+          margin-bottom: 20px;
+          text-align: center;
+          text-transform: uppercase;
+
+          &:after {
+            margin: 20px auto 0;
+            display: block;
+            content: "   ";
+            height: 1px;
+            width: 50px;
+            border-top: 3px solid $color1;
+          }
+        }
       }
     }
   }

@@ -78,8 +78,12 @@
           />
 
           <div class="menuIcons">
-            <i class="fa-solid fa-bars" id="openIcon"></i>
-            <i class="fa-solid fa-xmark" id="closeIcon"></i>
+            <i class="fa-solid fa-bars" id="openIcon" onclick="openNav()"></i>
+            <i
+              class="fa-solid fa-xmark"
+              id="closeIcon"
+              onclick="closeNav()"
+            ></i>
           </div>
           <nav>
             <ul>
@@ -88,6 +92,8 @@
                   ><i class="fa-solid fa-house-chimney"></i
                 ></a>
               </li>
+              <li class="responsive-li"><a href="./index.html">Accueil</a></li>
+
               <li onmouseover="openSousNav1()" onmouseleave="closeSousNav1()">
                 <a href="./nous-connaitre.html"
                   >Nous connaître <i class="fa-solid fa-chevron-down"></i
@@ -186,8 +192,20 @@
                   </ul>
                 </div>
               </li>
+              <li class="responsive-li"><a href="./faq.html">FAQ</a></li>
+
               <li><a href="./medias.html">Médias</a></li>
               <li><a href="./nous-contacter.html">Nous contacter</a></li>
+              <li class="responsive-li button-menu">
+                <a href="./je-souhaite-adherer.html">Adhésion</a>
+              </li>
+              <li class="responsive-li button-menu">
+                <a
+                  href="https://syndicat-departemental-force-ouvriere-transports--6618ac08c732b.assoconnect.com/contacts/login"
+                  target="_blank"
+                  >Connexion</a
+                >
+              </li>
             </ul>
           </nav>
         </div>
@@ -200,6 +218,7 @@
           <button class="buttonIcon">
             <a
               href="https://syndicat-departemental-force-ouvriere-transports--6618ac08c732b.assoconnect.com/contacts/login"
+              target="_blank"
               ><i class="fa-solid fa-user"></i>Se connecter</a
             >
           </button>

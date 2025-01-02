@@ -12,20 +12,39 @@ header {
     background: $white;
     z-index: 99999999999999999999999999999999999999999;
 
+    @media screen and (max-width: 1277px) {
+      grid-template-columns: 1fr;
+      height: 15vh;
+    }
+
     .menu-barre-sup {
       display: flex;
       justify-content: start;
       align-items: center;
       gap: 30px;
 
+      @media screen and (max-width: 1277px) {
+        display: flex;
+        justify-content: space-between;
+      }
+
       img {
         width: 15%;
+
+        @media screen and (max-width: 1277px) {
+          height: 10vh;
+          width: auto;
+        }
       }
 
       .menuIcons {
         display: none;
+        i {
+          font-size: 1.5rem;
+          color: $color1;
+        }
 
-        @media screen and (max-width: 1270px) {
+        @media screen and (max-width: 1346px) {
           display: block;
         }
 
@@ -35,7 +54,8 @@ header {
       }
 
       nav {
-        @media screen and (max-width: 1270px) {
+        transition: 0.2s;
+        @media screen and (max-width: 1346px) {
           display: none;
         }
 
@@ -43,6 +63,19 @@ header {
           display: flex;
           justify-content: space-evenly;
           align-items: center;
+
+          @media screen and (max-width: 1346px) {
+            flex-direction: column;
+            position: absolute;
+            top: 80px;
+            right: 0;
+            background: $white;
+            height: 100vh;
+            padding: 20px 50px;
+            gap: 20px;
+            justify-content: start;
+            align-items: start;
+          }
           li {
             list-style: none;
             transition: 0.2s;
@@ -60,9 +93,14 @@ header {
               display: flex;
               width: 100%;
               height: 100%;
+
               i {
                 transition: 0.2s;
                 font-size: 1.5rem;
+
+                @media screen and (max-width: 1346px) {
+                  display: none;
+                }
 
                 &:hover {
                   color: $color1;
@@ -82,6 +120,11 @@ header {
               position: absolute;
               z-index: 999999999999999999999999999999999999999999;
 
+              @media screen and (max-width: 1346px) {
+                display: none;
+                position: static;
+              }
+
               ul {
                 box-shadow: 0 0 5px $blackShadow;
                 border-radius: 10px;
@@ -91,10 +134,17 @@ header {
                 align-items: center;
                 justify-content: center;
 
+                @media screen and (max-width: 1346px) {
+                  display: none;
+                }
+
                 li {
                   border-bottom: 1px solid $border;
                   width: 100%;
                   padding: 10px 20px;
+                  @media screen and (max-width: 1346px) {
+                    display: none;
+                  }
 
                   &:first-of-type {
                     border-radius: 10px 10px 0 0;
@@ -146,11 +196,16 @@ header {
     }
 
     div {
+      @media screen and (max-width: 1277px) {
+        display: flex;
+        gap: 10px;
+      }
+
       &:last-of-type {
         display: flex;
         justify-content: end;
 
-        button {
+        .buttonIcon {
           margin: 0 10px;
 
           &:first-of-type {
@@ -162,13 +217,53 @@ header {
           }
           i {
             width: 40px;
-            height: 100%;
+            height: 40px;
             display: flex;
+            margin-right: 15px;
             justify-content: center;
             align-items: center;
           }
         }
       }
+    }
+  }
+
+  .button-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      border: 3px solid transparent;
+      background: $degrade;
+      color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      border-radius: 360px;
+      transition: 0.2s;
+
+      &:hover {
+        border: 3px solid $color1;
+        background: transparent;
+        color: $color1;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1277px) {
+    .buttonIcon {
+      display: none;
+    }
+  }
+
+  .responsive-li {
+    display: none;
+
+    @media screen and (max-width: 1346px) {
+      display: block;
     }
   }
 }

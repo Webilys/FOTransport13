@@ -1,4 +1,22 @@
-//OUVERTURE DU SOUS MENU
+// ----------------- MENU RESPONSIVE -----------------
+
+const openIcon = document.getElementById("openIcon");
+const closeIcon = document.getElementById("closeIcon");
+const nav = document.querySelector("nav");
+
+function openNav() {
+  nav.style.display = "block";
+  closeIcon.style.display = "block";
+  openIcon.style.display = "none";
+}
+
+function closeNav() {
+  nav.style.display = "none";
+  closeIcon.style.display = "none";
+  openIcon.style.display = "block";
+}
+
+// ----------------- OUVERTURE DU SOUS MENU -----------------
 
 //Sous menu 1
 
@@ -36,7 +54,7 @@ function closeSousNav3() {
   sousNav3.style.display = "none";
 }
 
-//Gestion du menu outils avec affichage des outils selon catégories
+//  ----------------- MENU PAGE OUTILS -----------------
 
 const tousLesOutils = document.getElementById("tous-les-outils");
 const outilsSyndicaux = document.getElementById("outils-syndicaux");
@@ -103,5 +121,7 @@ function afficherLesEssentiels() {
   tracts.style.display = "none";
   lesEssentiels.style.display = "block";
 }
+
+//initialisation de l'affichage de tous les outils
 
 afficherTousLesOutils();

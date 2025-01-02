@@ -15,12 +15,37 @@
     align-items: center;
     position: relative;
 
+    @media screen and (max-width: 1015px) {
+      width: 80%;
+      height: 80%;
+    }
+
     h2 {
       font-size: 2rem;
       color: $black;
       text-shadow: 0 0 5px $white;
       text-transform: uppercase;
       line-height: 50px;
+
+      @media screen and (max-width: 1015px) {
+        font-size: 1.8rem;
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: 1.6rem;
+      }
+
+      @media screen and (max-width: 470px) {
+        line-height: 30px;
+      }
+
+      @media screen and (max-width: 370px) {
+        font-size: 1.4rem;
+        //   font-size: 1.2rem;
+      }
+
+      // @media screen and (max-width: 370px) {
+      // }
     }
   }
 }
@@ -33,6 +58,16 @@
   gap: 20px;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 1070px) {
+    height: auto;
+    padding: 50px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 570px) {
+    grid-template-columns: 1fr;
+  }
 
   a {
     border-radius: 10px;
@@ -79,8 +114,17 @@
   padding: 20px 50px 100px;
   display: grid;
   grid-template-columns: 50% 50%;
+
+  @media screen and (max-width: 960px) {
+    grid-template-columns: 1fr;
+    background: url(../img/lettre.png) center/contain no-repeat;
+  }
+
   .img-lettre {
     width: 100%;
+    @media screen and (max-width: 960px) {
+      display: none;
+    }
     img {
       box-shadow: 0 0 5px $blackShadow;
       border-radius: 10px;
@@ -93,6 +137,15 @@
     border-radius: 10px;
     padding: 50px;
     margin: 50px 100px 0 -150px;
+
+    @media screen and (max-width: 1070px) {
+      margin: 50px 50px 0 -50px;
+    }
+
+    @media screen and (max-width: 960px) {
+      margin: 0;
+      background: $degrade3;
+    }
 
     h2 {
       color: $white;

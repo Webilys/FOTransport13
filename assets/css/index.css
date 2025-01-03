@@ -2198,4 +2198,36 @@ footer .footer-copyright .heart {
   #adhesion .adhesion-form form p {
     text-align: center;
   }
+}
+
+#page-avantages-adhesion .intro {
+  padding: 50px 50px 10px;
+}
+#page-avantages-adhesion .section {
+  padding: 20px 50px 10px;
+}
+#page-avantages-adhesion .section h2 {
+  color: #8b0000;
+  margin-bottom: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+#page-avantages-adhesion .section h2:after {
+  margin-top: 20px;
+  display: block;
+  content: "   ";
+  height: 1px;
+  width: 50px;
+  border-top: 3px solid #8b0000;
+}
+#page-avantages-adhesion .section p {
+  text-align: left;
+  padding-bottom: 30px;
+}
+#page-avantages-adhesion .section ul {
+  padding-bottom: 30px;
+}
+#page-avantages-adhesion .section ul li {
+  text-align: left;
+  list-style-position: inside;
 }/*# sourceMappingURL=index.css.map */

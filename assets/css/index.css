@@ -710,6 +710,14 @@ footer .footer-sup ul {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 555px) {
+  footer .footer-sup ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 footer .footer-sup ul li {
   list-style: none;
   padding: 0 10px;
@@ -2121,6 +2129,11 @@ footer .footer-copyright .heart {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
+@media screen and (max-width: 555px) {
+  #adhesion .adhesion-form form {
+    text-align: center;
+  }
+}
 #adhesion .adhesion-form form div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2135,7 +2148,13 @@ footer .footer-copyright .heart {
 }
 @media screen and (max-width: 555px) {
   #adhesion .adhesion-form form div {
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 #adhesion .adhesion-form form div input {
@@ -2156,6 +2175,11 @@ footer .footer-copyright .heart {
 #adhesion .adhesion-form form button {
   margin-top: 30px;
   cursor: url(../img/cursor-hover.ico), pointer;
+}
+@media screen and (max-width: 555px) {
+  #adhesion .adhesion-form form button {
+    margin: 30px auto;
+  }
 }
 #adhesion .adhesion-form form input[type=checkbox] {
   width: auto;

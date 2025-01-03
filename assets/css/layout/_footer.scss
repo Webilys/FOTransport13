@@ -11,6 +11,11 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @media screen and (max-width: 555px) {
+        flex-direction: column;
+      }
+
       li {
         list-style: none;
         padding: 0 10px;

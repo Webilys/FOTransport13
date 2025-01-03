@@ -815,7 +815,7 @@ footer .footer-copyright .heart {
   height: 100vh;
   padding: 120px 50px 50px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

@@ -2230,4 +2230,100 @@ footer .footer-copyright .heart {
 #page-avantages-adhesion .section ul li {
   text-align: left;
   list-style-position: inside;
+}
+
+#fiches-infos .intro {
+  padding: 50px 50px 10px;
+}
+#fiches-infos .section {
+  padding: 0px 50px 50px;
+}
+#fiches-infos .section h2 {
+  color: #8b0000;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#fiches-infos .section h2:after {
+  margin: 20px auto;
+  display: block;
+  content: "   ";
+  height: 1px;
+  width: 50px;
+  border-top: 3px solid #8b0000;
+}
+#fiches-infos .section p {
+  text-align: left;
+  padding-bottom: 30px;
+}
+#fiches-infos .section ul {
+  padding-bottom: 30px;
+}
+#fiches-infos .section ul li {
+  text-align: left;
+  list-style-position: inside;
+}
+#fiches-infos #types-elus {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+#fiches-infos #types-elus div {
+  padding: 50px;
+  background: #f1f1f1;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+#fiches-infos #types-elus div h3 {
+  color: #8b0000;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#fiches-infos #types-elus div h3:after {
+  margin: 20px auto;
+  display: block;
+  content: "   ";
+  height: 1px;
+  width: 50px;
+  border-top: 3px solid #8b0000;
+}
+#fiches-infos #types-elus div p {
+  text-align: justify;
+  padding-bottom: 20px;
+}
+#fiches-infos #types-elus div ul {
+  padding-bottom: 20px;
+}
+#fiches-infos #types-elus div ul li {
+  text-align: justify;
+}
+#fiches-infos #types-elus div button {
+  margin: 30px auto 0;
+  width: 300px;
+}
+#fiches-infos #ressources h2 {
+  color: #8b0000;
+  margin-bottom: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+#fiches-infos #ressources h2:after {
+  margin: 20px 0 0 0;
+  display: block;
+  content: "   ";
+  height: 1px;
+  width: 50px;
+  border-top: 3px solid #8b0000;
 }/*# sourceMappingURL=index.css.map */

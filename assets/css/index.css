@@ -1312,6 +1312,8 @@ footer .footer-copyright .heart {
   width: 70px;
   height: 70px;
   border-radius: 360px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1322,8 +1324,8 @@ footer .footer-copyright .heart {
       -ms-flex-align: center;
           align-items: center;
   color: #8b0000;
-  -webkit-transform: translateX(-55px);
-          transform: translateX(-55px);
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
 }
 #nous-connaitre #notre-reseau div {
   display: -webkit-box;
@@ -1575,6 +1577,8 @@ footer .footer-copyright .heart {
   width: 70px;
   height: 70px;
   border-radius: 360px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

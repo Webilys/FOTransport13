@@ -371,7 +371,7 @@ header .barre-sup {
 @media screen and (max-width: 1277px) {
   header .barre-sup {
     grid-template-columns: 1fr;
-    height: 15vh;
+    height: 20vh;
   }
 }
 header .barre-sup .menu-barre-sup {
@@ -388,34 +388,42 @@ header .barre-sup .menu-barre-sup {
 }
 @media screen and (max-width: 1277px) {
   header .barre-sup .menu-barre-sup {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
 }
 header .barre-sup .menu-barre-sup img {
-  width: 15%;
+  width: 20%;
 }
 @media screen and (max-width: 1277px) {
   header .barre-sup .menu-barre-sup img {
-    height: 10vh;
+    height: 15vh;
     width: auto;
   }
 }
 header .barre-sup .menu-barre-sup .menuIcons {
   display: none;
 }
+@media screen and (max-width: 1346px) {
+  header .barre-sup .menu-barre-sup .menuIcons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
 header .barre-sup .menu-barre-sup .menuIcons i {
   font-size: 1.5rem;
   color: #8b0000;
-}
-@media screen and (max-width: 1346px) {
-  header .barre-sup .menu-barre-sup .menuIcons {
-    display: block;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 header .barre-sup .menu-barre-sup .menuIcons #closeIcon {
   display: none;
@@ -447,12 +455,12 @@ header .barre-sup .menu-barre-sup nav ul {
         -ms-flex-direction: column;
             flex-direction: column;
     position: absolute;
-    top: 80px;
+    top: 20vh;
     right: 0;
     background: #fff;
     height: 100vh;
-    padding: 20px 50px;
-    gap: 20px;
+    padding: 10px 20px;
+    gap: 12px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
@@ -478,6 +486,11 @@ header .barre-sup .menu-barre-sup nav ul li a {
   display: flex;
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 1277px) {
+  header .barre-sup .menu-barre-sup nav ul li a {
+    font-size: 0.9rem;
+  }
 }
 header .barre-sup .menu-barre-sup nav ul li a i {
   -webkit-transition: 0.2s;
@@ -682,9 +695,12 @@ header .responsive-li {
     display: block;
   }
 }
+header .sous-nav-responsive {
+  margin: 0 0 0 15px;
+}
 
 main {
-  margin-top: 15vh;
+  margin-top: 20vh;
 }
 main .intro {
   margin: 50px;
@@ -758,7 +774,7 @@ footer .footer-copyright .heart {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 85vh;
+  height: 80vh;
 }
 .hero .heroOverlay {
   background: rgba(255, 255, 255, 0.8);

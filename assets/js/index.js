@@ -1,19 +1,19 @@
 // ----------------- MENU RESPONSIVE -----------------
 
+const nav = document.querySelector("nav");
 const openIcon = document.getElementById("openIcon");
 const closeIcon = document.getElementById("closeIcon");
-const nav = document.querySelector("nav");
 
 function openNav() {
   nav.style.display = "block";
-  closeIcon.style.display = "block";
+  closeIcon.style.display = "flex";
   openIcon.style.display = "none";
 }
 
 function closeNav() {
   nav.style.display = "none";
   closeIcon.style.display = "none";
-  openIcon.style.display = "block";
+  openIcon.style.display = "flex";
 }
 
 // ----------------- OUVERTURE DU SOUS MENU -----------------

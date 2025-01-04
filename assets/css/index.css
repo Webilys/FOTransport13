@@ -2343,8 +2343,18 @@ footer .footer-copyright .heart {
 #fiches-infos .types-elus2 {
   grid-template-columns: repeat(2, 1fr);
 }
+@media screen and (max-width: 950px) {
+  #fiches-infos .types-elus2 {
+    grid-template-columns: 1fr;
+  }
+}
 #fiches-infos .types-elus3 {
   grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (max-width: 1339px) {
+  #fiches-infos .types-elus3 {
+    grid-template-columns: 1fr;
+  }
 }
 #fiches-infos #ressources h2 {
   color: #8b0000;

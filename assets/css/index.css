@@ -889,6 +889,11 @@ footer .footer-copyright .heart {
   text-align: justify;
   font-size: 0.9rem;
 }
+@media screen and (max-width: 960px) {
+  .lettre .texte-lettre p {
+    text-align: left;
+  }
+}
 .lettre .texte-lettre p .signature {
   font-weight: bold;
   color: #fff;

@@ -37,7 +37,6 @@
 
   #types-elus {
     display: grid;
-    // grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 
     div {
@@ -84,6 +83,9 @@
     }
   }
 
+  .cssct {
+    width: 300px;
+  }
   .types-elus2 {
     grid-template-columns: repeat(2, 1fr);
   }

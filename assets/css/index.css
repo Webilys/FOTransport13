@@ -2265,7 +2265,6 @@ footer .footer-copyright .heart {
 }
 #fiches-infos #types-elus {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 #fiches-infos #types-elus div {
@@ -2312,6 +2311,12 @@ footer .footer-copyright .heart {
 #fiches-infos #types-elus div button {
   margin: 30px auto 0;
   width: 300px;
+}
+#fiches-infos .types-elus2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+#fiches-infos .types-elus3 {
+  grid-template-columns: repeat(3, 1fr);
 }
 #fiches-infos #ressources h2 {
   color: #8b0000;
